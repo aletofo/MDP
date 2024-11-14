@@ -4,11 +4,26 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.11.35327.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementi di soluzione", "Elementi di soluzione", "{4420A854-5472-4C1E-A9FF-0ADE8D11F9E0}"
-	ProjectSection(SolutionItems) = preProject
-		frequencies.cpp = frequencies.cpp
-	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Frequencies", "Frequencies\Frequencies.vcxproj", "{DCD0F5EB-AAFB-4274-BC03-BB7C04469C5F}"
 EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCD0F5EB-AAFB-4274-BC03-BB7C04469C5F}.Debug|x64.ActiveCfg = Debug|x64
+		{DCD0F5EB-AAFB-4274-BC03-BB7C04469C5F}.Debug|x64.Build.0 = Debug|x64
+		{DCD0F5EB-AAFB-4274-BC03-BB7C04469C5F}.Debug|x86.ActiveCfg = Debug|Win32
+		{DCD0F5EB-AAFB-4274-BC03-BB7C04469C5F}.Debug|x86.Build.0 = Debug|Win32
+		{DCD0F5EB-AAFB-4274-BC03-BB7C04469C5F}.Release|x64.ActiveCfg = Release|x64
+		{DCD0F5EB-AAFB-4274-BC03-BB7C04469C5F}.Release|x64.Build.0 = Release|x64
+		{DCD0F5EB-AAFB-4274-BC03-BB7C04469C5F}.Release|x86.ActiveCfg = Release|Win32
+		{DCD0F5EB-AAFB-4274-BC03-BB7C04469C5F}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
