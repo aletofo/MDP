@@ -22,35 +22,33 @@ void error(std::string_view s) {
 }
 
 class pbcompresser {
-	uint8_t lastbyte_ = 0;
+	char lastbyte_ = 0;
 	size_t L_ = 0;
 	size_t run_ = 1;
 	size_t copy_ = 0;
-	std::vector<uint8_t> v_;
+	std::vector<char> copyvect_;
 	std::istream& is_;
 	std::ostream& os_;
 
-	void writerun(uint8_t x) {
-		int n = static_cast<uint8_t>(x);
-		os_ << "|" << L_ << "|" << n;
+	void writerun(char ch) {
+		os_ << "|" << L_ << "|" << ch;
 	}
 
-	void writecopy(std::vector<uint8_t> v) {
+	void writecopy(std::vector<char> v) {
 		os_ << "|" << L_ << "|";
 		for (int i = 0; i < v.size(); i++) {
-			int n = static_cast<uint8_t>(v.at(i));
 			if (i < v.size() - 1)
-				os_ << n << "|";
+				os_ << v.at(i) << "|";
 			else
-				os_ << n;
+				os_ << v.at(i);
 		}
 	}
 
-	void length(uint8_t x) {	
+	void length(char x) {	
 		if (run_ > 1) {
 			L_ = 257 - run_;
 			writerun(lastbyte_);
-			v_.clear();
+			copyvect_.clear();
 			run_ = 1;
 			copy_ = 1;
 			L_ = 0;
@@ -64,13 +62,12 @@ class pbcompresser {
 			char nextch;
 			if (curpos < filesize) {
 				is_.get(nextch);
-				uint8_t nextbyte = static_cast<uint8_t>(nextch);
 				is_.seekg(curpos);
-				if (x == nextbyte) {
+				if (x == nextch) {
 					--copy_;
 					L_ = copy_;
-					writecopy(v_);
-					v_.clear();
+					writecopy(copyvect_);
+					copyvect_.clear();
 					run_ = 1;
 					copy_ = 1;
 					L_ = 0;
@@ -79,9 +76,9 @@ class pbcompresser {
 			else {
 				is_.seekg(curpos);
 				L_ = copy_;
-				v_.push_back(x);
-				writecopy(v_);
-				v_.clear();
+				copyvect_.push_back(x);
+				writecopy(copyvect_);
+				copyvect_.clear();
 			}
 			
 		}
@@ -94,8 +91,8 @@ public:
 
 	}
 
-	std::ostream& operator()(uint8_t x) {
-		v_.push_back(lastbyte_);
+	std::ostream& operator()(char x) {
+		copyvect_.push_back(lastbyte_);
 		if (x == lastbyte_) {
 			++run_;
 		}
@@ -104,6 +101,28 @@ public:
 			length(x);
 		}
 		lastbyte_ = x;
+		return os_;
+	}
+};
+
+class pbdecompresser {
+	uint8_t lastbyte_ = 0;
+	size_t L_ = 0;
+	size_t run_ = 1;
+	size_t copy_ = 0;
+	std::vector<uint8_t> copyvect_;
+	std::istream& is_;
+	std::ostream& os_;
+
+	
+
+public:
+	pbdecompresser(std::istream& is, std::ostream& os) : is_(is), os_(os) {}
+	~pbdecompresser() {
+
+	}
+
+	std::ostream& operator()(uint8_t x) {
 		return os_;
 	}
 };
@@ -125,22 +144,31 @@ void compress(const std::string& input_filename, const std::string& output_filen
 	pbcompresser pb(is, os);
 	for (int i = 0; i < filesize; ++i) {
 		is.get(ch);
-		uint8_t x = static_cast<uint8_t>(ch);
-		pb(x);
+		pb(ch);
 	}
-	os << "|";
+	os << "|" << 128 << "|";
 }
 
 void decompress(const std::string& input_filename, const std::string& output_filename) {
-	std::ifstream is(input_filename, std::ios::binary);
+	std::ifstream is(input_filename/*, std::ios::binary*/);
 	if (!is) {
 		error("Cannot open file " + input_filename + " for reading");
 	}
-	std::ofstream os(output_filename/*, std::ios::binary*/);
+	std::ofstream os(output_filename, std::ios::binary);
 	if (!os) {
 		error("Cannot open file " + output_filename + " for writing");
 	}
+	is.seekg(0, std::ios::end);
+	auto filesize = is.tellg();
+	is.seekg(0, std::ios::beg);
 
+	char ch;
+	pbdecompresser pb(is, os);
+	for (int i = 0; i < filesize; ++i) {
+		is.get(ch);
+		uint8_t x = static_cast<uint8_t>(ch);
+		pb(x);
+	}
 }
 
 int main(int argc, char* argv[]) {
