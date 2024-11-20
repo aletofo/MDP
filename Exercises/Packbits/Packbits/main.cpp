@@ -44,7 +44,7 @@ class pbcompresser {
 		}
 	}
 
-	void length(char x) {	
+	void length(char ch) {	
 		if (run_ > 1) {
 			L_ = 257 - run_;
 			writerun(lastbyte_);
@@ -63,7 +63,7 @@ class pbcompresser {
 			if (curpos < filesize) {
 				is_.get(nextch);
 				is_.seekg(curpos);
-				if (x == nextch) {
+				if (ch == nextch) {
 					--copy_;
 					L_ = copy_;
 					writecopy(copyvect_);
@@ -76,7 +76,7 @@ class pbcompresser {
 			else {
 				is_.seekg(curpos);
 				L_ = copy_;
-				copyvect_.push_back(x);
+				copyvect_.push_back(ch);
 				writecopy(copyvect_);
 				copyvect_.clear();
 			}
@@ -91,16 +91,16 @@ public:
 
 	}
 
-	std::ostream& operator()(char x) {
+	std::ostream& operator()(char ch) {
 		copyvect_.push_back(lastbyte_);
-		if (x == lastbyte_) {
+		if (ch == lastbyte_) {
 			++run_;
 		}
 		else {
 			++copy_;
-			length(x);
+			length(ch);
 		}
-		lastbyte_ = x;
+		lastbyte_ = ch;
 		return os_;
 	}
 };
@@ -122,7 +122,22 @@ public:
 
 	}
 
-	std::ostream& operator()(uint8_t x) {
+	std::ostream& decompress_length(size_t x) {
+		L_ = x;
+		return os_;
+	}
+	std::ostream& decompress_char(char ch) {
+		if (L_ < 128) {
+			os_.write(&ch, 1);
+		}
+		else if (L_ > 128) {
+			for (size_t i = 0; i < 257 - L_; i++) {
+				os_.write(&ch, 1);
+			}
+		}
+		else if (L_ == 128) {
+			return os_;
+		}
 		return os_;
 	}
 };
@@ -144,6 +159,10 @@ void compress(const std::string& input_filename, const std::string& output_filen
 	pbcompresser pb(is, os);
 	for (int i = 0; i < filesize; ++i) {
 		is.get(ch);
+		if (ch == '\r' || ch == '\n') {
+			os << std::endl;
+			continue;
+		}
 		pb(ch);
 	}
 	os << "|" << 128 << "|";
@@ -162,12 +181,24 @@ void decompress(const std::string& input_filename, const std::string& output_fil
 	auto filesize = is.tellg();
 	is.seekg(0, std::ios::beg);
 
+	size_t x;
 	char ch;
 	pbdecompresser pb(is, os);
-	for (int i = 0; i < filesize; ++i) {
-		is.get(ch);
-		uint8_t x = static_cast<uint8_t>(ch);
-		pb(x);
+	std::string token;
+
+	while (std::getline(is, token, '|')) {
+		// Controlla se il token è numerico
+		bool is_number = !token.empty() && std::all_of(token.begin(), token.end(), ::isdigit);
+
+		if (is_number) {
+			x = std::stoi(token);
+			pb.decompress_length(x);
+		}
+		else {
+			ch = token[0];
+			pb.decompress_char(ch);
+		}
+		
 	}
 }
 
