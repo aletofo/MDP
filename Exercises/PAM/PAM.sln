@@ -7,6 +7,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Gradient", "Split\Split.vcx
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UpsideDown", "UpsideDown\UpsideDown.vcxproj", "{43FBE04C-5FFF-4243-AA82-E6E1EDBFCF3C}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Mirrored", "Mirrored\Mirrored.vcxproj", "{3E01A92A-B005-400B-A8B4-231F7B61E33D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -31,6 +33,14 @@ Global
 		{43FBE04C-5FFF-4243-AA82-E6E1EDBFCF3C}.Release|x64.Build.0 = Release|x64
 		{43FBE04C-5FFF-4243-AA82-E6E1EDBFCF3C}.Release|x86.ActiveCfg = Release|Win32
 		{43FBE04C-5FFF-4243-AA82-E6E1EDBFCF3C}.Release|x86.Build.0 = Release|Win32
+		{3E01A92A-B005-400B-A8B4-231F7B61E33D}.Debug|x64.ActiveCfg = Debug|x64
+		{3E01A92A-B005-400B-A8B4-231F7B61E33D}.Debug|x64.Build.0 = Debug|x64
+		{3E01A92A-B005-400B-A8B4-231F7B61E33D}.Debug|x86.ActiveCfg = Debug|Win32
+		{3E01A92A-B005-400B-A8B4-231F7B61E33D}.Debug|x86.Build.0 = Debug|Win32
+		{3E01A92A-B005-400B-A8B4-231F7B61E33D}.Release|x64.ActiveCfg = Release|x64
+		{3E01A92A-B005-400B-A8B4-231F7B61E33D}.Release|x64.Build.0 = Release|x64
+		{3E01A92A-B005-400B-A8B4-231F7B61E33D}.Release|x86.ActiveCfg = Release|Win32
+		{3E01A92A-B005-400B-A8B4-231F7B61E33D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
