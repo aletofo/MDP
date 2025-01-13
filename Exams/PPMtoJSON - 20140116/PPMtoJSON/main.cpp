@@ -34,6 +34,122 @@ struct ppmimg {
 	}
 };
 
+struct PKBcompresser {
+	uint8_t L_ = 0;
+	uint8_t run_ = 1;
+	uint8_t copy_ = 0;
+	char lastbyte_ = 'x';
+	char byte_;
+	std::vector<char> copyvector_;
+	std::ifstream& is_;
+	std::ofstream& os_;
+
+	PKBcompresser(std::ifstream& is, std::ofstream& os) : is_(is), os_(os) {}
+
+	void writerun() {
+		os_ << L_ << lastbyte_;
+	}
+	void writecopy() {
+		os_ << L_ << ",";
+		for (int i = 0; i < copyvector_.size(); i++) {
+			if (i < copyvector_.size() - 1)
+				os_ << copyvector_.at(i);
+			else
+				os_ << copyvector_.at(i);
+		}
+	}
+
+	void check() {
+		if (run_ > 1) {
+			L_ = 257 - run_;
+			writerun();
+			copyvector_.clear();
+			run_ = 1;
+			copy_ = 1;
+			L_ = 0;
+		}
+		else if (copy_ > 1) {
+			std::streampos curpos = is_.tellg();
+			is_.seekg(0, std::ios::end);
+			std::streampos filesize = is_.tellg();
+			is_.seekg(curpos);
+
+			char nextch;
+			if (curpos < filesize) {
+				is_.get(nextch);
+				is_.seekg(curpos);
+				if (byte_ == nextch) {
+					--copy_;
+					L_ = copy_;
+					writecopy();
+					copyvector_.clear();
+					run_ = 1;
+					copy_ = 1;
+					L_ = 0;
+				}
+			}
+			else {
+				is_.seekg(curpos);
+				L_ = copy_;
+				copyvector_.push_back(byte_);
+				writecopy();
+				copyvector_.clear();
+				run_ = 1;
+				copy_ = 1;
+				L_ = 0;
+			}
+		}
+	}
+
+	void operator() () {
+		is_.get(byte_);
+		copyvector_.push_back(byte_);
+		if (byte_ == lastbyte_) {
+			++run_;
+		}
+		else {
+			++copy_;
+			check();
+		}
+		lastbyte_ = byte_;
+	}
+
+};
+
+class bitreader {
+	char curr_ch;
+	uint16_t buffer_ = 0;
+	size_t n_ = 0;
+	std::istream& is_;
+	std::ostream& os_;
+	std::string dictionary_ = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+
+	void readbit(uint64_t curbit, int numbits) {
+		buffer_ = (buffer_ << 1) | (curbit & 1);
+		++n_;
+		if (n_ == numbits) {
+			os_ << dictionary_[buffer_];
+			n_ = 0;
+			buffer_ = 0;
+		}
+	}
+
+public:
+	bitreader(std::istream& is, std::ostream& os) : is_(is), os_(os) {}
+
+	~bitreader() {}
+
+	std::istream& operator()(int numbits) {
+		is_.get(curr_ch);
+		uint64_t x = static_cast<uint64_t>(curr_ch);
+		for (int bitnum = 7; bitnum >= 0; --bitnum) {
+			readbit(x >> bitnum, numbits);
+		}
+		return is_;
+	}
+
+};
+
 void check(std::string s, int &count, size_t &r, size_t &c, size_t &mv) {
 
 	if (s == "P6")
@@ -120,6 +236,27 @@ void split(ppmimg<uint8_t>& img, ppmimg<uint8_t>& R, ppmimg<uint8_t>& G, ppmimg<
 	}
 }
 
+void compress(std::ifstream &is, std::ofstream &os) {
+
+	is.seekg(0, std::ios::end);
+	auto filesize = is.tellg();
+	is.seekg(0, std::ios::beg);
+
+	PKBcompresser pkbc(is,os);
+
+	for (int i = 0; i < filesize; ++i) {
+		pkbc();
+	}
+	pkbc.check();
+	uint8_t terminator = 0x80;
+	os << terminator;
+}
+
+void base64table() {
+
+	std::string dictionary = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+}
+
 int main(int argc, char* argv[]) {
 
 	if (argc != 2) {
@@ -157,6 +294,72 @@ int main(int argc, char* argv[]) {
 	Rbin.write(R.rawdata(), R.rawsize());
 	Gbin.write(G.rawdata(), G.rawsize());
 	Bbin.write(B.rawdata(), B.rawsize());
+
+	Rbin.close();
+	Gbin.close();
+	Bbin.close();
+
+	//Packbits compression
+
+	std::ifstream isR("R.bin", std::ios::binary);
+	std::ifstream isG("G.bin", std::ios::binary);
+	std::ifstream isB("B.bin", std::ios::binary);
+
+	std::ofstream osR("r.pkb", std::ios::binary);
+	std::ofstream osG("g.pkb", std::ios::binary);
+	std::ofstream osB("b.pkb", std::ios::binary);
+
+	compress(isR,osR);
+	compress(isG,osG);
+	compress(isB,osB);
+
+	osR.close();
+	osG.close();
+	osB.close();
+
+	//Base64 compression
+
+	std::ifstream isRpkb("r.pkb", std::ios::binary);
+	std::ifstream isGpkb("g.pkb", std::ios::binary);
+	std::ifstream isBpkb("b.pkb", std::ios::binary);
+
+	std::ofstream osRtxt("r.txt");
+	std::ofstream osGtxt("g.txt");
+	std::ofstream osBtxt("b.txt");
+
+	bitreader brR(isRpkb, osRtxt);
+	bitreader brG(isGpkb, osGtxt);
+	bitreader brB(isBpkb, osBtxt);
+
+	std::string dictionary = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/";
+
+	isRpkb.seekg(0, std::ios::end);
+	auto filesizeR = isRpkb.tellg();
+	isRpkb.seekg(0, std::ios::beg);
+
+	for (int x = 0; x < filesizeR; ++x) {
+		brR(6);
+	}
+
+	isGpkb.seekg(0, std::ios::end);
+	auto filesizeG = isGpkb.tellg();
+	isGpkb.seekg(0, std::ios::beg);
+
+	for (int x = 0; x < filesizeG; ++x) {
+		brG(6);
+	}
+	int remainder = (filesizeG * 8) % 6;
+	for (int i = 0; i < remainder; i++) {
+		osGtxt << "=";
+	}
+
+	isBpkb.seekg(0, std::ios::end);
+	auto filesizeB = isBpkb.tellg();
+	isBpkb.seekg(0, std::ios::beg);
+
+	for (int x = 0; x < filesizeB; ++x) {
+		brB(6);
+	}
 
 	return EXIT_SUCCESS;
 }
