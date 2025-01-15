@@ -1,0 +1,707 @@
+{
+	"width" : 640,
+	"height" : 480,
+	"background" : "2923BE",
+	"elements" : [
+		{
+			"width" : 40,
+			"height" : 200,
+			"x" : 598,
+			"y" : 78,
+			"color" : "49F1F1"
+		},
+		{
+			"width" : 112,
+			"height" : 42,
+			"x" : 435,
+			"y" : 422,
+			"color" : "870C3E"
+		},
+		{
+			"width" : 200,
+			"height" : 3,
+			"x" : 141,
+			"y" : 476,
+			"color" : "47DEB3"
+		},
+		{
+			"width" : 200,
+			"height" : 97,
+			"x" : 67,
+			"y" : 379,
+			"color" : "1F035A"
+		},
+		{
+			"width" : 2,
+			"height" : 133,
+			"x" : 421,
+			"y" : 31,
+			"color" : "CBFC96"
+		},
+		{
+			"width" : 37,
+			"height" : 100,
+			"x" : 403,
+			"y" : 141,
+			"color" : "1CDBAE"
+		},
+		{
+			"width" : 200,
+			"height" : 42,
+			"x" : 80,
+			"y" : 302,
+			"color" : "36FD12"
+		},
+		{
+			"width" : 200,
+			"height" : 83,
+			"x" : 286,
+			"y" : 381,
+			"color" : "AD4F14"
+		},
+		{
+			"width" : 71,
+			"height" : 164,
+			"x" : 486,
+			"y" : 176,
+			"color" : "30B732"
+		},
+		{
+			"width" : 200,
+			"height" : 5,
+			"x" : 118,
+			"y" : 162,
+			"color" : "E18B1F"
+		},
+		{
+			"width" : 52,
+			"height" : 14,
+			"x" : 537,
+			"y" : 386,
+			"color" : "9D492C"
+		},
+		{
+			"width" : 50,
+			"height" : 200,
+			"x" : 537,
+			"y" : 213,
+			"color" : "B2EAC9"
+		},
+		{
+			"width" : 6,
+			"height" : 82,
+			"x" : 615,
+			"y" : 214,
+			"color" : "D67E2D"
+		},
+		{
+			"width" : 44,
+			"height" : 18,
+			"x" : 387,
+			"y" : 431,
+			"color" : "61FF69"
+		},
+		{
+			"width" : 85,
+			"height" : 200,
+			"x" : 209,
+			"y" : 158,
+			"color" : "167272"
+		},
+		{
+			"width" : 142,
+			"height" : 38,
+			"x" : 260,
+			"y" : 431,
+			"color" : "02D7E8"
+		},
+		{
+			"width" : 200,
+			"height" : 77,
+			"x" : 75,
+			"y" : 201,
+			"color" : "33749E"
+		},
+		{
+			"width" : 60,
+			"height" : 88,
+			"x" : 468,
+			"y" : 159,
+			"color" : "597E35"
+		},
+		{
+			"width" : 67,
+			"height" : 51,
+			"x" : 500,
+			"y" : 428,
+			"color" : "902D48"
+		},
+		{
+			"width" : 200,
+			"height" : 38,
+			"x" : 230,
+			"y" : 377,
+			"color" : "E5C0F7"
+		},
+		{
+			"width" : 50,
+			"height" : 47,
+			"x" : 519,
+			"y" : 356,
+			"color" : "5000D4"
+		},
+		{
+			"width" : 3,
+			"height" : 83,
+			"x" : 635,
+			"y" : 325,
+			"color" : "3B3382"
+		},
+		{
+			"width" : 54,
+			"height" : 8,
+			"x" : 18,
+			"y" : 378,
+			"color" : "CEB185"
+		},
+		{
+			"width" : 2,
+			"height" : 196,
+			"x" : 632,
+			"y" : 102,
+			"color" : "96730E"
+		},
+		{
+			"width" : 6,
+			"height" : 111,
+			"x" : 615,
+			"y" : 328,
+			"color" : "4A4AD0"
+		},
+		{
+			"width" : 200,
+			"height" : 65,
+			"x" : 122,
+			"y" : 86,
+			"color" : "ADAE24"
+		},
+		{
+			"width" : 200,
+			"height" : 41,
+			"x" : 82,
+			"y" : 411,
+			"color" : "E53CF4"
+		},
+		{
+			"width" : 3,
+			"height" : 200,
+			"x" : 40,
+			"y" : 110,
+			"color" : "C56059"
+		},
+		{
+			"width" : 110,
+			"height" : 200,
+			"x" : 522,
+			"y" : 25,
+			"color" : "D0C2C9"
+		},
+		{
+			"width" : 200,
+			"height" : 200,
+			"x" : 329,
+			"y" : 234,
+			"color" : "086140"
+		},
+		{
+			"width" : 133,
+			"height" : 200,
+			"x" : 234,
+			"y" : 229,
+			"color" : "C18CD6"
+		},
+		{
+			"width" : 81,
+			"height" : 5,
+			"x" : 279,
+			"y" : 76,
+			"color" : "151D9A"
+		},
+		{
+			"width" : 50,
+			"height" : 200,
+			"x" : 97,
+			"y" : 256,
+			"color" : "A89AA7"
+		},
+		{
+			"width" : 22,
+			"height" : 140,
+			"x" : 596,
+			"y" : 31,
+			"color" : "D923D1"
+		},
+		{
+			"width" : 1,
+			"height" : 106,
+			"x" : 552,
+			"y" : 305,
+			"color" : "A1665E"
+		},
+		{
+			"width" : 200,
+			"height" : 71,
+			"x" : 156,
+			"y" : 62,
+			"color" : "9FE2A5"
+		},
+		{
+			"width" : 200,
+			"height" : 179,
+			"x" : 52,
+			"y" : 39,
+			"color" : "2A4689"
+		},
+		{
+			"width" : 2,
+			"height" : 12,
+			"x" : 634,
+			"y" : 182,
+			"color" : "63B126"
+		},
+		{
+			"width" : 45,
+			"height" : 200,
+			"x" : 237,
+			"y" : 94,
+			"color" : "961234"
+		},
+		{
+			"width" : 184,
+			"height" : 12,
+			"x" : 447,
+			"y" : 457,
+			"color" : "6D0EE3"
+		},
+		{
+			"width" : 9,
+			"height" : 107,
+			"x" : 542,
+			"y" : 320,
+			"color" : "C2033F"
+		},
+		{
+			"width" : 139,
+			"height" : 200,
+			"x" : 143,
+			"y" : 212,
+			"color" : "1B2861"
+		},
+		{
+			"width" : 200,
+			"height" : 190,
+			"x" : 172,
+			"y" : 142,
+			"color" : "08DCF3"
+		},
+		{
+			"width" : 200,
+			"height" : 33,
+			"x" : 190,
+			"y" : 370,
+			"color" : "FFA0D0"
+		},
+		{
+			"width" : 195,
+			"height" : 154,
+			"x" : 140,
+			"y" : 254,
+			"color" : "734DD0"
+		},
+		{
+			"width" : 200,
+			"height" : 33,
+			"x" : 91,
+			"y" : 386,
+			"color" : "2B8CFA"
+		},
+		{
+			"width" : 200,
+			"height" : 90,
+			"x" : 240,
+			"y" : 327,
+			"color" : "3295AA"
+		},
+		{
+			"width" : 27,
+			"height" : 33,
+			"x" : 523,
+			"y" : 198,
+			"color" : "CABE7D"
+		},
+		{
+			"width" : 200,
+			"height" : 200,
+			"x" : 65,
+			"y" : 187,
+			"color" : "4F68F6"
+		},
+		{
+			"width" : 101,
+			"height" : 126,
+			"x" : 537,
+			"y" : 301,
+			"color" : "F0443A"
+		},
+		{
+			"width" : 200,
+			"height" : 200,
+			"x" : 211,
+			"y" : 51,
+			"color" : "A1105E"
+		},
+		{
+			"width" : 122,
+			"height" : 110,
+			"x" : 460,
+			"y" : 211,
+			"color" : "B4310E"
+		},
+		{
+			"width" : 0,
+			"height" : 199,
+			"x" : 597,
+			"y" : 240,
+			"color" : "FFD89D"
+		},
+		{
+			"width" : 5,
+			"height" : 146,
+			"x" : 633,
+			"y" : 7,
+			"color" : "7C9CC1"
+		},
+		{
+			"width" : 136,
+			"height" : 4,
+			"x" : 391,
+			"y" : 384,
+			"color" : "B8A687"
+		},
+		{
+			"width" : 0,
+			"height" : 200,
+			"x" : 346,
+			"y" : 237,
+			"color" : "99E73D"
+		},
+		{
+			"width" : 200,
+			"height" : 200,
+			"x" : 177,
+			"y" : 32,
+			"color" : "41E967"
+		},
+		{
+			"width" : 170,
+			"height" : 151,
+			"x" : 159,
+			"y" : 292,
+			"color" : "154200"
+		},
+		{
+			"width" : 110,
+			"height" : 18,
+			"x" : 337,
+			"y" : 449,
+			"color" : "2FB38F"
+		},
+		{
+			"width" : 200,
+			"height" : 10,
+			"x" : 195,
+			"y" : 458,
+			"color" : "CA6FD5"
+		},
+		{
+			"width" : 200,
+			"height" : 114,
+			"x" : 21,
+			"y" : 110,
+			"color" : "65272A"
+		},
+		{
+			"width" : 200,
+			"height" : 92,
+			"x" : 33,
+			"y" : 254,
+			"color" : "B4C9C0"
+		},
+		{
+			"width" : 14,
+			"height" : 81,
+			"x" : 521,
+			"y" : 300,
+			"color" : "8F1756"
+		},
+		{
+			"width" : 16,
+			"height" : 200,
+			"x" : 584,
+			"y" : 38,
+			"color" : "888138"
+		},
+		{
+			"width" : 200,
+			"height" : 200,
+			"x" : 18,
+			"y" : 130,
+			"color" : "D0E771"
+		},
+		{
+			"width" : 62,
+			"height" : 59,
+			"x" : 525,
+			"y" : 370,
+			"color" : "862999"
+		},
+		{
+			"width" : 200,
+			"height" : 113,
+			"x" : 284,
+			"y" : 218,
+			"color" : "B8B5B0"
+		},
+		{
+			"width" : 200,
+			"height" : 13,
+			"x" : 95,
+			"y" : 448,
+			"color" : "8D74D9"
+		},
+		{
+			"width" : 63,
+			"height" : 134,
+			"x" : 529,
+			"y" : 40,
+			"color" : "79BDF7"
+		},
+		{
+			"width" : 96,
+			"height" : 18,
+			"x" : 224,
+			"y" : 321,
+			"color" : "6E3C7B"
+		},
+		{
+			"width" : 200,
+			"height" : 200,
+			"x" : 138,
+			"y" : 10,
+			"color" : "5CF7E5"
+		},
+		{
+			"width" : 200,
+			"height" : 200,
+			"x" : 50,
+			"y" : 91,
+			"color" : "84C6C3"
+		},
+		{
+			"width" : 22,
+			"height" : 181,
+			"x" : 458,
+			"y" : 112,
+			"color" : "6F032F"
+		},
+		{
+			"width" : 200,
+			"height" : 184,
+			"x" : 144,
+			"y" : 208,
+			"color" : "814329"
+		},
+		{
+			"width" : 63,
+			"height" : 69,
+			"x" : 489,
+			"y" : 382,
+			"color" : "814831"
+		},
+		{
+			"width" : 200,
+			"height" : 200,
+			"x" : 158,
+			"y" : 30,
+			"color" : "8C9810"
+		},
+		{
+			"width" : 103,
+			"height" : 164,
+			"x" : 461,
+			"y" : 303,
+			"color" : "5059BF"
+		},
+		{
+			"width" : 160,
+			"height" : 157,
+			"x" : 387,
+			"y" : 168,
+			"color" : "895FB9"
+		},
+		{
+			"width" : 5,
+			"height" : 58,
+			"x" : 608,
+			"y" : 380,
+			"color" : "029842"
+		},
+		{
+			"width" : 88,
+			"height" : 67,
+			"x" : 310,
+			"y" : 180,
+			"color" : "B82F73"
+		},
+		{
+			"width" : 1,
+			"height" : 34,
+			"x" : 253,
+			"y" : 189,
+			"color" : "D31F01"
+		},
+		{
+			"width" : 71,
+			"height" : 143,
+			"x" : 278,
+			"y" : 86,
+			"color" : "831915"
+		},
+		{
+			"width" : 200,
+			"height" : 113,
+			"x" : 44,
+			"y" : 302,
+			"color" : "0EDCBC"
+		},
+		{
+			"width" : 43,
+			"height" : 24,
+			"x" : 573,
+			"y" : 429,
+			"color" : "9274AF"
+		},
+		{
+			"width" : 200,
+			"height" : 17,
+			"x" : 16,
+			"y" : 341,
+			"color" : "40FC80"
+		},
+		{
+			"width" : 65,
+			"height" : 200,
+			"x" : 535,
+			"y" : 171,
+			"color" : "21DB7D"
+		},
+		{
+			"width" : 15,
+			"height" : 95,
+			"x" : 542,
+			"y" : 34,
+			"color" : "A88CB8"
+		},
+		{
+			"width" : 17,
+			"height" : 146,
+			"x" : 303,
+			"y" : 314,
+			"color" : "94741D"
+		},
+		{
+			"width" : 198,
+			"height" : 18,
+			"x" : 400,
+			"y" : 440,
+			"color" : "F25B81"
+		},
+		{
+			"width" : 44,
+			"height" : 200,
+			"x" : 203,
+			"y" : 29,
+			"color" : "497402"
+		},
+		{
+			"width" : 200,
+			"height" : 200,
+			"x" : 282,
+			"y" : 203,
+			"color" : "262340"
+		},
+		{
+			"width" : 114,
+			"height" : 133,
+			"x" : 185,
+			"y" : 181,
+			"color" : "ADE12A"
+		},
+		{
+			"width" : 2,
+			"height" : 34,
+			"x" : 477,
+			"y" : 170,
+			"color" : "DCE977"
+		},
+		{
+			"width" : 12,
+			"height" : 200,
+			"x" : 617,
+			"y" : 69,
+			"color" : "93980D"
+		},
+		{
+			"width" : 82,
+			"height" : 77,
+			"x" : 410,
+			"y" : 159,
+			"color" : "B2A2D5"
+		},
+		{
+			"width" : 200,
+			"height" : 166,
+			"x" : 60,
+			"y" : 55,
+			"color" : "C38FD6"
+		},
+		{
+			"width" : 115,
+			"height" : 69,
+			"x" : 297,
+			"y" : 372,
+			"color" : "01188D"
+		},
+		{
+			"width" : 200,
+			"height" : 32,
+			"x" : 28,
+			"y" : 224,
+			"color" : "CF5DD6"
+		},
+		{
+			"width" : 65,
+			"height" : 35,
+			"x" : 553,
+			"y" : 375,
+			"color" : "CC0DEA"
+		},
+		{
+			"width" : 134,
+			"height" : 89,
+			"x" : 206,
+			"y" : 320,
+			"color" : "2BF837"
+		}
+	]
+}

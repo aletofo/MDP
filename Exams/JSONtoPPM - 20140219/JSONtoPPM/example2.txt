@@ -1,0 +1,77 @@
+{
+	"width" : 640,
+	"height" : 480,
+	"background" : "2923BE",
+	"elements" : [
+		{
+			"width" : 40,
+			"height" : 200,
+			"x" : 598,
+			"y" : 78,
+			"color" : "49F1F1"
+		},
+		{
+			"width" : 112,
+			"height" : 42,
+			"x" : 435,
+			"y" : 422,
+			"color" : "870C3E"
+		},
+		{
+			"width" : 200,
+			"height" : 3,
+			"x" : 141,
+			"y" : 476,
+			"color" : "47DEB3"
+		},
+		{
+			"width" : 200,
+			"height" : 97,
+			"x" : 67,
+			"y" : 379,
+			"color" : "1F035A"
+		},
+		{
+			"width" : 2,
+			"height" : 133,
+			"x" : 421,
+			"y" : 31,
+			"color" : "CBFC96"
+		},
+		{
+			"width" : 37,
+			"height" : 100,
+			"x" : 403,
+			"y" : 141,
+			"color" : "1CDBAE"
+		},
+		{
+			"width" : 200,
+			"height" : 42,
+			"x" : 80,
+			"y" : 302,
+			"color" : "36FD12"
+		},
+		{
+			"width" : 200,
+			"height" : 83,
+			"x" : 286,
+			"y" : 381,
+			"color" : "AD4F14"
+		},
+		{
+			"width" : 71,
+			"height" : 164,
+			"x" : 486,
+			"y" : 176,
+			"color" : "30B732"
+		},
+		{
+			"width" : 200,
+			"height" : 5,
+			"x" : 118,
+			"y" : 162,
+			"color" : "E18B1F"
+		}
+	]
+}

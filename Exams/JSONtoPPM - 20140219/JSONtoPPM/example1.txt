@@ -1,0 +1,21 @@
+{
+    "width" : 500,
+	"height" : 500,
+	"background" : "FFFFFF",
+	"elements" : [
+		{
+			"width" : 50,
+			"height" : 50,
+			"x" : 100,
+			"y" : 200,
+			"color" : "808080"
+		},
+		{
+			"width" : 150,
+			"height" : 50,
+			"x" : 100,
+			"y" : 20,
+			"color" : "123456"
+		}
+	]
+}
