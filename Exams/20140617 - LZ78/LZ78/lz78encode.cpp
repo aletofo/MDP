@@ -3,51 +3,12 @@
 #include <iostream>
 #include <tuple>
 #include <fstream>
-#include <print>
+//#include <print>
 #include <string>
 #include <map>
 #include <cmath>
 #include <cstdio>
-
-class bitreader {
-	char curr_ch;
-	uint8_t buffer_ = 0;
-	size_t n_ = 0;
-	std::istream& is_;
-	std::ostream& os_;
-
-	void readbit(uint64_t curbit, int numbits) {
-		buffer_ = (buffer_ << 1) | (curbit & 1);
-		++n_;
-		if (n_ == numbits) {
-			os_ << buffer_;
-			n_ = 0;
-			buffer_ = 0;
-		}
-	}
-
-public:
-	bitreader(std::istream& is, std::ostream& os) : is_(is), os_(os) {}
-
-	~bitreader() {}
-
-	std::istream& operator() (int numbits, char ch) {
-		curr_ch = ch;
-		uint64_t x = static_cast<uint64_t>(curr_ch);
-		for (int bitnum = 7; bitnum >= 0; --bitnum) {
-			readbit(x >> bitnum, numbits);
-		}
-		return is_;
-	}
-
-	void fillbuffer(uint8_t b, size_t n) {
-		buffer_ = b;
-		n_ = n;
-	}
-
-	uint8_t buffer() { return buffer_; }
-	size_t n() { return n_; }
-};
+#include <cstdint>
 
 class bitwriter {
 	uint8_t buffer_;
@@ -114,8 +75,28 @@ void write_couple(char ch, int index, bitwriter &bw, int bits) {
 		bw(static_cast<char>(index), 4);
 		bw(ch, 8);
 	}
-	if (bits > 16) {
+	if (bits > 15 && bits <= 31) {
 		bw(static_cast<char>(index), 5);
+		bw(ch, 8);
+	}
+	if (bits > 31 && bits <= 63) {
+		bw(static_cast<char>(index), 6);
+		bw(ch, 8);
+	}
+	if (bits > 63 && bits <= 127) {
+		bw(static_cast<char>(index), 7);
+		bw(ch, 8);
+	}
+	if (bits > 127 && bits <= 255) {
+		bw(static_cast<char>(index), 8);
+		bw(ch, 8);
+	}
+	if (bits > 255 && bits <= 511) {
+		bw(static_cast<char>(index), 9);
+		bw(ch, 8);
+	}
+	if (bits > 511 && bits <= 1023) {
+		bw(static_cast<char>(index), 10);
 		bw(ch, 8);
 	}
 }
@@ -134,10 +115,8 @@ bool lz78encode(const std::string& input_filename, const std::string& output_fil
 	os << "LZ78";
 
 	bitwriter bw(os);
-	//bitreader br(is, os);
 
 	bw(maxbits, 5); //set maxbits value: only 5 bits so I need to wait to put out the buffer(I can only put out 8 bits)
-	//br.fillbuffer(bw.buffer(), bw.n()); //fill the bitreader buffer so that I attach the first 5 bits (maxbits) to the first encoded value
 
 	char ch, nextch;
 	int index = 0, maxindex = static_cast<int>(std::pow(2, maxbits)) - 1;
@@ -147,8 +126,16 @@ bool lz78encode(const std::string& input_filename, const std::string& output_fil
 	while (is.get(ch)) {
 		if (index > maxindex) {
 			m.clear();
+			index = 0;
 		}
 		std::streampos curpos = is.tellg();
+
+		if (is.get() == EOF) {
+			write_couple(ch, 0, bw, index);
+			break;
+		}
+
+		is.seekg(curpos);
 
 		s.push_back(ch);
 
@@ -158,15 +145,14 @@ bool lz78encode(const std::string& input_filename, const std::string& output_fil
 			s.push_back(nextch);
 			if (!m.emplace(s, index).second) {
 				while (!m.emplace(s, index).second) {
+					std::streampos curpos = is.tellg();
+					if (is.get() == EOF)
+						break;
+					is.seekg(curpos);
 					is.get(nextch);
 					s.push_back(nextch);
 				}
-				std::streampos curpos = is.tellg();
 				s.pop_back();
-				if (is.get() == EOF) {
-					s.pop_back();
-				}
-				is.seekg(curpos);
 				write_couple(nextch, m[s], bw, index - 1);
 			}
 			else {
@@ -186,19 +172,4 @@ bool lz78encode(const std::string& input_filename, const std::string& output_fil
 	}
 
 	return true;
-}
-
-int main(int argc, char* argv[]) {
-	if (argc != 4) {
-		return EXIT_FAILURE;
-	}
-	std::string input_filename = argv[1];
-
-	std::string output_filename = argv[2];
-
-	int maxbits = std::stoi(argv[3]);
-
-	bool encoded = lz78encode(input_filename, output_filename, maxbits);
-
-	return EXIT_SUCCESS;
 }
