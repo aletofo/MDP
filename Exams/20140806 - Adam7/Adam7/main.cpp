@@ -29,6 +29,9 @@ public:
 
 	size_t width() { return width_; }
 	size_t height() { return height_; }
+	uint8_t getpixel(size_t r, size_t c) {
+		return data_[r * width_ + c];
+	}
 
 	void filldata() {
 		uint8_t byte;
@@ -42,10 +45,6 @@ public:
 				data_[r * width_ + c] = byte;
 			}
 		}
-	}
-
-	uint8_t getpixel(size_t r, size_t c) {
-		return data_[r * width_ + c];
 	}
 
 	void notfullblock() {
@@ -78,14 +77,21 @@ public:
 						i = 0;
 					}
 					byte = getpixel(r, c);
-					curpattern = pattern_[i * 8 + j];
+					curpattern = pattern_[j * 8 + i];
 
 					levels_.at(curpattern).push_back(byte);
 					++i;
 				}
 				++j;
 			}
-		
+	}
+
+	void writeblock() {
+
+	}
+
+	void readlevels() {
+
 	}
 
 	void writelevels() {
@@ -134,16 +140,14 @@ PGM header(std::ifstream& is, std::ofstream& os) {
 	return pgm;
 }
 
+
+
 void decompress(std::ifstream& is, std::string s) {
-	for (char i = 0; i < 8; ++i) {
-		s.push_back('_');
-		s.push_back(i);
-		s += ".pgm";
-		std::ofstream os(s, std::ios::binary);
-		
-	}
-}
-void compress(std::ifstream& is, std::ofstream& os) {
+
+	size_t w = 0, h = 0;
+	char ch;
+	size_t x = 1;
+	std::vector<std::vector<uint8_t>> levels;
 	std::vector<uint8_t> pattern = { 1,6,4,6,2,6,4,6,
 									7,7,7,7,7,7,7,7,
 									5,6,5,6,5,6,5,6,
@@ -152,6 +156,50 @@ void compress(std::ifstream& is, std::ofstream& os) {
 									7,7,7,7,7,7,7,7,
 									5,6,5,6,5,6,5,6,
 									7,7,7,7,7,7,7,7 };
+
+	for (int i = 0; i < 8; ++i) {
+		is.get();
+	}
+	for (int i = 0; i < 4; ++i) {
+		is.get(ch);
+		w += x * static_cast<uint8_t>(ch);
+		x *= 10;
+	}
+	x = 1;
+	for (int i = 0; i < 4; ++i) {
+		is.get(ch);
+		h += x * static_cast<uint8_t>(ch);
+		x *= 10;
+	}
+	uint8_t value, pat_value, i = 0, j = 0;
+	for (size_t r = 0; r < h; ++r) {
+		if (i == 8) {
+			j = 0;
+		}
+		for (size_t c = 0; c < w; ++c) {
+			if (i == 8) {
+				i = 0;
+			}
+			is.get(ch);
+			value = static_cast<uint8_t>(ch);
+			pat_value = pattern[j * 8 + i];
+			levels.at(pat_value).push_back(value);
+			++i;
+		}
+		++j;
+	}
+
+	for (char i = 0; i < 8; ++i) {
+		s.push_back('_');
+		s.push_back(i);
+		s += ".pgm";
+		std::ofstream os(s, std::ios::binary);
+		
+		PGM pgm(w, h, is, os);
+	}
+
+}
+void compress(std::ifstream& is, std::ofstream& os) {
 
 	PGM pgm = header(is, os);
 	pgm.filldata();
