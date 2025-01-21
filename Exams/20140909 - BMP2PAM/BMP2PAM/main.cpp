@@ -255,7 +255,7 @@ PAMimg bmp_infoheader(std::ifstream& is, std::ofstream& os) {
 	h = str2ul(buffer4, 3);
 	is.read(buffer2, 2);
 	is.read(buffer2, 2);
-	bpp = str2ul(buffer2, 1);
+	bpp = str2ul(buffer2, 1); //test
 	is.read(buffer4, 4);
 	is.read(buffer4, 4);
 	is.read(buffer4, 4);
