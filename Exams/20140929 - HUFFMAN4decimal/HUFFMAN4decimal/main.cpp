@@ -11,6 +11,40 @@
 #include <ranges>
 #include <algorithm>
 
+class bitwriter {
+	uint8_t buffer_ = 0;
+	uint8_t n_ = 0;
+	std::ofstream& os_;
+
+public:
+	bitwriter(std::ofstream& os) : os_(os) {}
+
+	void writebit(uint8_t curbit) {
+		buffer_ = (buffer_ << 1) | (curbit & 1);
+		++n_;
+		if (n_ == 8) {
+			os_.put(buffer_);
+			n_ = 0;
+			buffer_ = 0;
+		}
+	}
+	void operator() (int numbits, uint8_t sym) {
+		for (int i = numbits - 1; i >= 0; --i) {
+			writebit(sym >> i);
+		}
+	}
+
+	void flush(uint8_t padbit = 1) {
+		while (n_ != 0) {
+			writebit(padbit);
+		}
+	}
+	~bitwriter() {
+		flush();
+	}
+	
+};
+
 struct huffman {
 	struct node {
 		int num_;
@@ -39,7 +73,9 @@ struct huffman {
 	void generate_codes(node* n, uint8_t buffer, uint8_t len) {
 		if (n->left_ != nullptr && n->right_ != nullptr) {
 			generate_codes(n->left_, (buffer << 1), ++len);
+			--len;
 			generate_codes(n->right_, (buffer << 1) | 1, ++len);
+			--len;
 		}
 		else {
 			n->sym_ = buffer;
@@ -164,6 +200,16 @@ int main(int argc, char* argv[]) {
 	for (std::tuple<uint8_t, uint64_t, uint8_t> t : nodes) {
 		os << std::get<0>(t);
 		os << std::get<1>(t);
+	}
+	os.put(255);
+	os << static_cast<uint32_t>(v.size());
+	bitwriter bw(os);
+	for (int x : v) {
+		for (std::tuple<uint8_t, uint64_t, uint8_t> t : nodes) {
+			if (x == std::get<1>(t)) {
+				bw(static_cast<int>(std::get<0>(t)), std::get<2>(t));
+			}
+		}
 	}
 
 	return EXIT_SUCCESS;
