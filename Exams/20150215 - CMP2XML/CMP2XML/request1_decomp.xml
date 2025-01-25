@@ -1,0 +1,3222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+	<responseDate>2015-02-17T11:19:39Z</responseDate>
+	<request verb="ListRecords" metadataPrefix="oai_dc" set="com_11380_1059967">https://iris.unimore.it/oai/request</request>
+	<ListRecords>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/6518</identifier>
+				<datestamp>2015-01-27T15:59:27Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Influence of ionic environment and pH on the electrokinetic properties of ball clays</dc:title>
+					<dc:creator>Galassi  C</dc:creator>
+					<dc:creator>Costa  AL</dc:creator>
+					<dc:creator>Pozzi  P</dc:creator>
+					<dc:subject>cation exchange capacity; clay minerals; electroacoustic; electrolytes; structural properties; surface charge; zeta potential</dc:subject>
+					<dc:date>2001</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:000169473500009</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/6518</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>263</dc:relation>
+					<dc:relation>7</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>269</dc:relation>
+					<dc:relation>49</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/6742</identifier>
+				<datestamp>2015-01-18T15:48:27Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Morphological and phytochemical features of secretory structures in Hypericum richeri (Clusiaceae)</dc:title>
+					<dc:creator>Fornasiero  RB</dc:creator>
+					<dc:creator>Maffi  L</dc:creator>
+					<dc:creator>Benvenuti  S</dc:creator>
+					<dc:creator>Bianchi  A</dc:creator>
+					<dc:subject>Hypericum richeri (Clusiaceae)</dc:subject>
+					<dc:date>2000</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:000166938700005</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/6742</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>427</dc:relation>
+					<dc:relation>8</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>434</dc:relation>
+					<dc:relation>20</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/6829</identifier>
+				<datestamp>2015-01-21T13:30:29Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Decreased susceptibility to oxidative stress-induced apoptosis of peripheral blood mononuclear cells from healthy elderly and centenarians</dc:title>
+					<dc:creator>Monti  D</dc:creator>
+					<dc:creator>Salvioli  S</dc:creator>
+					<dc:creator>Capri  M</dc:creator>
+					<dc:creator>Malorni  W</dc:creator>
+					<dc:creator>Straface  E</dc:creator>
+					<dc:creator>Cossarizza  A</dc:creator>
+					<dc:creator>Botti  B</dc:creator>
+					<dc:creator>Piacentini  M</dc:creator>
+					<dc:creator>Baggio  G</dc:creator>
+					<dc:creator>Barbi  C</dc:creator>
+					<dc:creator>Valensin  S</dc:creator>
+					<dc:creator>Bonafe  M</dc:creator>
+					<dc:creator>Franceschi  C</dc:creator>
+					<dc:subject>apoptosis; centenarians; aging; oxidative stress; 2-deoxy-D-ribose; longevity</dc:subject>
+					<dc:date>2000</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:000166121600023</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/6829</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>239</dc:relation>
+					<dc:relation>12</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>250</dc:relation>
+					<dc:relation>121</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/7849</identifier>
+				<datestamp>2015-01-21T13:32:13Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Long-term immunologic effects of thymectomy in patients with myasthenia gravis</dc:title>
+					<dc:creator>Gerli  R</dc:creator>
+					<dc:creator>Paganelli  R</dc:creator>
+					<dc:creator>Cossarizza  A</dc:creator>
+					<dc:creator>Muscat  C</dc:creator>
+					<dc:creator>Piccolo  G</dc:creator>
+					<dc:creator>Barbieri  D</dc:creator>
+					<dc:creator>Mariotti  S</dc:creator>
+					<dc:creator>Monti  D</dc:creator>
+					<dc:creator>Bistoni  O</dc:creator>
+					<dc:creator>Raiola  E</dc:creator>
+					<dc:creator>Venanzi  FM</dc:creator>
+					<dc:creator>Bertotto  A</dc:creator>
+					<dc:creator>Franceschi  C</dc:creator>
+					<dc:subject>myasthenia gravis; thymectomy T cell; B cell; anti-DNA; anticardiolipin; systemic lupus erythematosus</dc:subject>
+					<dc:date>1999</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:000080470200022</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/7849</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>865</dc:relation>
+					<dc:relation>8</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>872</dc:relation>
+					<dc:relation>103</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/7982</identifier>
+				<datestamp>2015-01-21T10:19:59Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Cell adhesion and the immune system: A case study using earthworms</dc:title>
+					<dc:creator>Cooper  EL</dc:creator>
+					<dc:creator>Cossarizza  A</dc:creator>
+					<dc:creator>Kauschke  E</dc:creator>
+					<dc:creator>Franceschi  C</dc:creator>
+					<dc:subject>coelomocytes; natural killer cells; perforin; receptor binding; evolution</dc:subject>
+					<dc:date>1999</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:000078996200004</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/7982</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>237</dc:relation>
+					<dc:relation>17</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>253</dc:relation>
+					<dc:relation>44</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/8096</identifier>
+				<datestamp>2015-01-27T14:58:42Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Rheological behavior of an STP deflocculated kaolin</dc:title>
+					<dc:creator>Andreola  F</dc:creator>
+					<dc:creator>Pozzi  P</dc:creator>
+					<dc:creator>Neto  JBR</dc:creator>
+					<dc:subject>material, ceramics, rheology</dc:subject>
+					<dc:date>1998</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:000077445700005</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/8096</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>68</dc:relation>
+					<dc:relation>4</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>71</dc:relation>
+					<dc:relation>77</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/8204</identifier>
+				<datestamp>2015-01-18T15:41:31Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Quality and yield of Ribes and Rubus cultivars grown in southern Italy hilly locations</dc:title>
+					<dc:creator>Rotundo  A</dc:creator>
+					<dc:creator>Bounous  G</dc:creator>
+					<dc:creator>Benvenuti  S</dc:creator>
+					<dc:creator>Vampa  G</dc:creator>
+					<dc:creator>Melegari  M</dc:creator>
+					<dc:creator>Soragni  F</dc:creator>
+					<dc:subject>yield; quality; berry fruits</dc:subject>
+					<dc:date>1998</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:000076161000044</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/8204</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>135</dc:relation>
+					<dc:relation>3</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>137</dc:relation>
+					<dc:relation>12</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/8274</identifier>
+				<datestamp>2015-01-21T10:21:18Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Apoptosis-like, reversible changes in plasma membrane asymmetry and permeability, and transient modifications in mitochondrial membrane potential induced by curcumin in rat thymocytes</dc:title>
+					<dc:creator>Jaruga  E</dc:creator>
+					<dc:creator>Salvioli  S</dc:creator>
+					<dc:creator>Dobrucki  J</dc:creator>
+					<dc:creator>Chrul  S</dc:creator>
+					<dc:creator>Bandorowicz-Pikula  J</dc:creator>
+					<dc:creator>Sikora  E</dc:creator>
+					<dc:creator>Franceschi  C</dc:creator>
+					<dc:creator>Cossarizza  A</dc:creator>
+					<dc:creator>Bartosz  G</dc:creator>
+					<dc:subject>apoptosis; curcumin; membrane asymmetry; permeability; mitochondrial membrane potential</dc:subject>
+					<dc:date>1998</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:000075649600023</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/8274</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>287</dc:relation>
+					<dc:relation>7</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>293</dc:relation>
+					<dc:relation>433</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/8339</identifier>
+				<datestamp>2015-01-21T13:33:15Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Toxin-induced activation of Rho GTP-binding protein increases Bcl-2 expression and influences mitochondrial homeostasis</dc:title>
+					<dc:creator>Fiorentini  C</dc:creator>
+					<dc:creator>Matarrese  P</dc:creator>
+					<dc:creator>Straface  E</dc:creator>
+					<dc:creator>Falzano  L</dc:creator>
+					<dc:creator>Fabbri  A</dc:creator>
+					<dc:creator>Donelli  G</dc:creator>
+					<dc:creator>Cossarizza  A</dc:creator>
+					<dc:creator>Boquet  P</dc:creator>
+					<dc:creator>Malorni  W</dc:creator>
+					<dc:subject>CNF1; Bcl-2; Bcl-X-L; Bax; mitochondria; apoptosis</dc:subject>
+					<dc:date>1998</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:000074927400036</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/8339</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>341</dc:relation>
+					<dc:relation>10</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>350</dc:relation>
+					<dc:relation>242</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/8447</identifier>
+				<datestamp>2015-01-21T13:34:16Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Use of flow cytometry as a tool to study mitochondrial membrane potential in isolated, living hepatocytes</dc:title>
+					<dc:creator>Salvioli  S</dc:creator>
+					<dc:creator>Maseroli  R</dc:creator>
+					<dc:creator>Pazienza  TL</dc:creator>
+					<dc:creator>Bobyleva  V</dc:creator>
+					<dc:creator>Cossarizza  A</dc:creator>
+					<dc:subject>hepatocytes; cytofluorimetry; mitochondrial membrane potential; 6-ketocholestanol; FCCP</dc:subject>
+					<dc:date>1998</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:000073801900019</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/8447</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>235</dc:relation>
+					<dc:relation>4</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>238</dc:relation>
+					<dc:relation>63</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/8914</identifier>
+				<datestamp>2015-01-21T13:36:06Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Self gamma 2a(b) protein is presented in vivo by gamma 2a(b) B cells but not by dendritic cells</dc:title>
+					<dc:creator>Granucci  F</dc:creator>
+					<dc:creator>Foti  M</dc:creator>
+					<dc:creator>Cossarizza  A</dc:creator>
+					<dc:creator>RicciardiCastagnoli  P</dc:creator>
+					<dc:subject>antigen presentation, T cells, B cells, dendritic cells</dc:subject>
+					<dc:date>1997</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1997XP43800028</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/8914</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>1794</dc:relation>
+					<dc:relation>6</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>1799</dc:relation>
+					<dc:relation>159</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/8951</identifier>
+				<datestamp>2015-01-21T10:22:10Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Resistance to apoptosis in Fanconi's anaemia - An ex vivo study in peripheral blood mononuclear cells</dc:title>
+					<dc:creator>Monti  D</dc:creator>
+					<dc:creator>Macchioni  S</dc:creator>
+					<dc:creator>Guido  M</dc:creator>
+					<dc:creator>Pagano  G</dc:creator>
+					<dc:creator>Zatterale  A</dc:creator>
+					<dc:creator>Calzone  R</dc:creator>
+					<dc:creator>Cossarizza  A</dc:creator>
+					<dc:creator>Straface  E</dc:creator>
+					<dc:creator>Malorni  W</dc:creator>
+					<dc:creator>Franceschi  C</dc:creator>
+					<dc:subject>Fanconi's anaemia; apoptosis; mitochondria; deoxy-D-ribose, 2-; tumour necrosis factor-alpha</dc:subject>
+					<dc:date>1997</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1997XK55400011</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/8951</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>365</dc:relation>
+					<dc:relation>5</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>369</dc:relation>
+					<dc:relation>409</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/8974</identifier>
+				<datestamp>2015-01-18T16:19:29Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Synthesis, antimicrobial and genotoxic properties of some benzoimidazole derivatives</dc:title>
+					<dc:creator>Benvenuti  S</dc:creator>
+					<dc:creator>Severi  F</dc:creator>
+					<dc:creator>Sacchetti  A</dc:creator>
+					<dc:creator>Melegari  M</dc:creator>
+					<dc:creator>Vampa  G</dc:creator>
+					<dc:creator>Zani  F</dc:creator>
+					<dc:creator>Mazza  P</dc:creator>
+					<dc:creator>Antolini  L</dc:creator>
+					<dc:subject>Synthesis, antimicrobial genotoxic benzoimidazole derivatives</dc:subject>
+					<dc:date>1997</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1997XJ36900005</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/8974</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>231</dc:relation>
+					<dc:relation>5</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>235</dc:relation>
+					<dc:relation>52</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/8996</identifier>
+				<datestamp>2015-01-20T17:14:27Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>T lymphocyte proliferative capability to defined stimuli and costimulatory CD28 pathway is not impaired in healthy centenarians</dc:title>
+					<dc:creator>Sansoni  P</dc:creator>
+					<dc:creator>Fagnoni  F</dc:creator>
+					<dc:creator>Vescovini  R</dc:creator>
+					<dc:creator>Mazzola  M</dc:creator>
+					<dc:creator>Brianti  V</dc:creator>
+					<dc:creator>Bologna  G</dc:creator>
+					<dc:creator>Nigro  E</dc:creator>
+					<dc:creator>Lavagetto  G</dc:creator>
+					<dc:creator>Cossarizza  A</dc:creator>
+					<dc:creator>Monti  D</dc:creator>
+					<dc:creator>Franceschi  C</dc:creator>
+					<dc:creator>Passeri  M</dc:creator>
+					<dc:subject>centenarians; T cells; CD28; proliferation</dc:subject>
+					<dc:date>1997</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1997XF71100010</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/8996</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>127</dc:relation>
+					<dc:relation>10</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>136</dc:relation>
+					<dc:relation>96</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/9167</identifier>
+				<datestamp>2015-01-20T16:23:01Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Successful immunosenescence and the remodelling of immune responses with ageing</dc:title>
+					<dc:creator>Franceschi  C</dc:creator>
+					<dc:creator>Monti  D</dc:creator>
+					<dc:creator>Barbieri  D</dc:creator>
+					<dc:creator>Salvioli  S</dc:creator>
+					<dc:creator>Grassilli  E</dc:creator>
+					<dc:creator>Capri  M</dc:creator>
+					<dc:creator>Troiano  L</dc:creator>
+					<dc:creator>Guido  M</dc:creator>
+					<dc:creator>Bonafe  M</dc:creator>
+					<dc:creator>Tropea  F</dc:creator>
+					<dc:creator>Salomoni  P</dc:creator>
+					<dc:creator>Benatti  F</dc:creator>
+					<dc:creator>Bellesia  E</dc:creator>
+					<dc:creator>Macchioni  S</dc:creator>
+					<dc:creator>Anderlini  R</dc:creator>
+					<dc:creator>Sansoni  P</dc:creator>
+					<dc:creator>Mariotti  S</dc:creator>
+					<dc:creator>Wratten  ML</dc:creator>
+					<dc:creator>Tetta  C</dc:creator>
+					<dc:creator>Cossarizza  A</dc:creator>
+					<dc:subject>ageing; longevity; centenarians; immunosenescence</dc:subject>
+					<dc:date>1996</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1996WL06500004</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/9167</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>18</dc:relation>
+					<dc:relation>8</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>25</dc:relation>
+					<dc:relation>11</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/9179</identifier>
+				<datestamp>2015-01-20T16:10:03Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Different pathways of apoptosis revealed by 2-chloro-adenosine and deoxy-D-ribose in mammalian astroglial cells</dc:title>
+					<dc:creator>Ceruti  S</dc:creator>
+					<dc:creator>Barbieri  D</dc:creator>
+					<dc:creator>Veronese  E</dc:creator>
+					<dc:creator>Cattabeni  F</dc:creator>
+					<dc:creator>Cossarizza  A</dc:creator>
+					<dc:creator>Giammarioli  AM</dc:creator>
+					<dc:creator>Malorni  W</dc:creator>
+					<dc:creator>Franceschi  C</dc:creator>
+					<dc:creator>Abbracchio  MP</dc:creator>
+					<dc:subject>rat brain astrocytes; deoxy-D-ribose; 2-chloro-adenosine; apoptosis; mitochondrium; N-acetyl-cysteine</dc:subject>
+					<dc:date>1997</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1997WK58200002</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/9179</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>372</dc:relation>
+					<dc:relation>12</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>383</dc:relation>
+					<dc:relation>47</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/9196</identifier>
+				<datestamp>2015-01-21T10:23:12Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Prolactin increases the susceptibility of primary leukemia cells to NK and LAK effectors</dc:title>
+					<dc:creator>Oberholtzer  E</dc:creator>
+					<dc:creator>Contarini  M</dc:creator>
+					<dc:creator>Veglia  F</dc:creator>
+					<dc:creator>Cossarizza  A</dc:creator>
+					<dc:creator>Franceschi  C</dc:creator>
+					<dc:creator>Geuna  M</dc:creator>
+					<dc:creator>Provinciali  M</dc:creator>
+					<dc:creator>DiStefano  G</dc:creator>
+					<dc:creator>Sissom  J</dc:creator>
+					<dc:creator>Brizzi  MF</dc:creator>
+					<dc:creator>Pegoraro  L</dc:creator>
+					<dc:creator>Matera  L</dc:creator>
+					<dc:subject>prolactin; natural killer cells; lymphokine activated killer cells; neuroimmunomodulation; cytokines</dc:subject>
+					<dc:date>1996</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1996WH15500003</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/9196</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>233</dc:relation>
+					<dc:relation>15</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>247</dc:relation>
+					<dc:relation>6</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/9407</identifier>
+				<datestamp>2015-01-21T10:24:12Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>A shift to Th0 cytokine production by CD4(+) cells in human longevity: Studies on two healthy centenarians</dc:title>
+					<dc:creator>Paganelli  R</dc:creator>
+					<dc:creator>Scala  E</dc:creator>
+					<dc:creator>Rosso  R</dc:creator>
+					<dc:creator>Cossarizza  A</dc:creator>
+					<dc:creator>Bertollo  L</dc:creator>
+					<dc:creator>Barbieri  D</dc:creator>
+					<dc:creator>Fabrizi  A</dc:creator>
+					<dc:creator>Lusi  EA</dc:creator>
+					<dc:creator>Fagiolo  U</dc:creator>
+					<dc:creator>Franceschi  C</dc:creator>
+					<dc:subject>aging; centenarian; T helper subset; cytokine</dc:subject>
+					<dc:date>1996</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1996VG26900009</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/9407</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>2030</dc:relation>
+					<dc:relation>5</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>2034</dc:relation>
+					<dc:relation>26</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/9621</identifier>
+				<datestamp>2015-01-21T13:37:04Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>CD45 isoforms expression on CD4(+) and CD8(+) T cells throughout life, from newborns to centenarians: Implications for T cell memory</dc:title>
+					<dc:creator>Cossarizza  A</dc:creator>
+					<dc:creator>Ortolani  C</dc:creator>
+					<dc:creator>Paganelli  R</dc:creator>
+					<dc:creator>Barbieri  D</dc:creator>
+					<dc:creator>Monti  D</dc:creator>
+					<dc:creator>Sansoni  P</dc:creator>
+					<dc:creator>Fagiolo  U</dc:creator>
+					<dc:creator>Castellani  G</dc:creator>
+					<dc:creator>Bersani  F</dc:creator>
+					<dc:creator>Londei  M</dc:creator>
+					<dc:creator>Franceschi  C</dc:creator>
+					<dc:subject>aging; longevity; centenarians; CD45, T lymphocytes; immune memory</dc:subject>
+					<dc:date>1996</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1996UH15600004</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/9621</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>173</dc:relation>
+					<dc:relation>23</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>195</dc:relation>
+					<dc:relation>86</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/9776</identifier>
+				<datestamp>2015-01-20T15:47:01Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Functional heterogeneity of an isolated mitochondrial population revealed by cytofluorometric analysis at the single organelle level</dc:title>
+					<dc:creator>Cossarizza A1, Ceccarelli D, Masini A.</dc:creator>
+					<dc:subject>mitochondria, mmp</dc:subject>
+					<dc:date>1996</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1996TQ82900011</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/9776</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>84</dc:relation>
+					<dc:relation>11</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>94</dc:relation>
+					<dc:relation>222</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/9788</identifier>
+				<datestamp>2015-01-20T16:01:11Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Control of apoptosis by the cellular ATP level</dc:title>
+					<dc:creator>Christoph Richter , Matthias Schweizer, Andrea Cossarizza, Claudio Franceschi</dc:creator>
+					<dc:subject>mitochondria; reactive oxygen; nitric oxide; calcium; adenosine triphosphate; apoptosis</dc:subject>
+					<dc:date>1996</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1996TP29900001</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/9788</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>107</dc:relation>
+					<dc:relation>4</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>110</dc:relation>
+					<dc:relation>378</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/9791</identifier>
+				<datestamp>2015-01-20T15:52:52Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Apoptosis and immunosenescence</dc:title>
+					<dc:creator>Monti  D</dc:creator>
+					<dc:creator>Cossarizza  A</dc:creator>
+					<dc:creator>Salvioli  S</dc:creator>
+					<dc:creator>Barbieri  D</dc:creator>
+					<dc:creator>Macchioni  S</dc:creator>
+					<dc:creator>Guido  M</dc:creator>
+					<dc:creator>Baggio  G</dc:creator>
+					<dc:creator>Franceschi  C</dc:creator>
+					<dc:subject>apoptosis, ATP</dc:subject>
+					<dc:date>1995</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1995TN79000011</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/9791</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>461</dc:relation>
+					<dc:relation>3</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>463</dc:relation>
+					<dc:relation>7</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/9792</identifier>
+				<datestamp>2015-01-21T08:59:53Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Human natural killer cytotoxic activity is not affected by in vitro exposure to 50-Hz sinusoidal magnetic fields</dc:title>
+					<dc:creator>Ramoni  C</dc:creator>
+					<dc:creator>Dupuis  ML</dc:creator>
+					<dc:creator>Vecchia  P</dc:creator>
+					<dc:creator>Polichetti  A</dc:creator>
+					<dc:creator>Petrini  C</dc:creator>
+					<dc:creator>Bersani  F</dc:creator>
+					<dc:creator>Capri  M</dc:creator>
+					<dc:creator>Cossarizza  A</dc:creator>
+					<dc:creator>Franceschi  C</dc:creator>
+					<dc:creator>Grandolfo  M</dc:creator>
+					<dc:subject>NK cells, magnetic fields</dc:subject>
+					<dc:date>1995</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1995TP26800013</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/9792</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>693</dc:relation>
+					<dc:relation>13</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>705</dc:relation>
+					<dc:relation>68</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/9820</identifier>
+				<datestamp>2015-01-21T13:38:13Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Evidence for dissimilar mechanisms of enhancement of inorganic and organic hydroperoxide cytotoxicity by L-histidine</dc:title>
+					<dc:creator>Guidarelli  A</dc:creator>
+					<dc:creator>Sestili  P</dc:creator>
+					<dc:creator>Cossarizza  A</dc:creator>
+					<dc:creator>Franceschi  C</dc:creator>
+					<dc:creator>Cattabeni  F</dc:creator>
+					<dc:creator>Cantoni  O</dc:creator>
+					<dc:subject>cytotoxicity, hydrogen peroxide, L-histidine</dc:subject>
+					<dc:date>1995</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1995TL75700066</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/9820</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>1575</dc:relation>
+					<dc:relation>8</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>1582</dc:relation>
+					<dc:relation>275</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/9840</identifier>
+				<datestamp>2015-01-21T09:01:16Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>THE AGING THYROID</dc:title>
+					<dc:creator>MARIOTTI  S</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>PINCHERA  A</dc:creator>
+					<dc:subject>aging, immune system, thyroid</dc:subject>
+					<dc:date>1995</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1995TK20900001</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/9840</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>686</dc:relation>
+					<dc:relation>30</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>715</dc:relation>
+					<dc:relation>16</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/9870</identifier>
+				<datestamp>2015-01-18T16:06:37Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>SYNTHESIS, CHARACTERIZATION, AND CRYSTALLOGRAPHIC ANALYSIS OF SOME BENZOIMIDAZOLE DERIVATIVES</dc:title>
+					<dc:creator>BENVENUTI  S</dc:creator>
+					<dc:creator>SEVERI  F</dc:creator>
+					<dc:creator>VAMPA  G</dc:creator>
+					<dc:creator>MALMUSI  L</dc:creator>
+					<dc:creator>ANTOLINI  L</dc:creator>
+					<dc:subject>SYNTHESIS, CHARACTERIZATION, CRYSTALLOGRAPHIC BENZOIMIDAZOLE DERIVATIVES</dc:subject>
+					<dc:date>1995</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1995TE60600034</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/9870</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>1613</dc:relation>
+					<dc:relation>7</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>1619</dc:relation>
+					<dc:relation>32</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/9922</identifier>
+				<datestamp>2015-01-21T13:25:04Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>MITOCHONDRIA AND APOPTOSIS - A CYTOFLUOROMETRIC APPROACH</dc:title>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>SALVIOLI  S</dc:creator>
+					<dc:creator>FRANCESCHINI  MG</dc:creator>
+					<dc:creator>KALASHNIKOVA  G</dc:creator>
+					<dc:creator>BARBIERI  D</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>GRASSILLI  E</dc:creator>
+					<dc:creator>TROPEA  F</dc:creator>
+					<dc:creator>TROIANO  L</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:subject>flow cytometry, mitochondria, apoptosis</dc:subject>
+					<dc:date>1995</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1995RZ03400007</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/9922</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>67</dc:relation>
+					<dc:relation>2</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>68</dc:relation>
+					<dc:relation>3</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/9952</identifier>
+				<datestamp>2015-01-21T13:39:37Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>INVOLVEMENT OF CD45 IN DEXAMETHASONE-INDUCED AND HEAT-SHOCK-INDUCED APOPTOSIS OF RAT THYMOCYTES</dc:title>
+					<dc:creator>TROIANO  L</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>LOVATO  E</dc:creator>
+					<dc:creator>TROPEA  F</dc:creator>
+					<dc:creator>BARBIERI  D</dc:creator>
+					<dc:creator>MORALE  MC</dc:creator>
+					<dc:creator>GALLO  F</dc:creator>
+					<dc:creator>MARCHETTI  B</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:subject>CD45, HEAT-SHOCK, APOPTOSIS, THYMOCYTES</dc:subject>
+					<dc:date>1995</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1995RW55600028</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/9952</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>941</dc:relation>
+					<dc:relation>8</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>948</dc:relation>
+					<dc:relation>214</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/9997</identifier>
+				<datestamp>2015-01-21T09:04:07Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>PROTECTIVE EFFECT OF N-ACETYLCYSTEINE IN TUMOR NECROSIS FACTOR-ALPHA-INDUCED APOPTOSIS IN U937 CELLS - THE ROLE OF MITOCHONDRIA</dc:title>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>SALVIOLI  S</dc:creator>
+					<dc:creator>BELLESIA  E</dc:creator>
+					<dc:creator>RIVABENE  R</dc:creator>
+					<dc:creator>BIONDO  L</dc:creator>
+					<dc:creator>RAINALDI  G</dc:creator>
+					<dc:creator>TINARI  A</dc:creator>
+					<dc:creator>MALORNI  W</dc:creator>
+					<dc:subject>N-ACETYLCYSTEINE, TNF-alpha, APOPTOSIS, MITOCHONDRIA</dc:subject>
+					<dc:date>1995</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1995RR76300027</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/9997</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>232</dc:relation>
+					<dc:relation>9</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>240</dc:relation>
+					<dc:relation>220</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/10045</identifier>
+				<datestamp>2015-01-21T14:05:28Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>FUNCTIONAL INTERCELLULAR-ADHESION MOLECULE-3 IS EXPRESSED BY FRESHLY ISOLATED EPIDERMAL LANGERHANS CELLS AND IS NOT REGULATED DURING CULTURE</dc:title>
+					<dc:creator>ZAMBRUNO  G</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>ZACCHI  V</dc:creator>
+					<dc:creator>OTTANI  D</dc:creator>
+					<dc:creator>LUPPI  AM</dc:creator>
+					<dc:creator>GIANNETTI  A</dc:creator>
+					<dc:creator>GIROLOMONI  G</dc:creator>
+					<dc:subject>ANTIGEN-PRESENTING CELLS; DENDRITIC CELLS; COSTIMULATORY MOLECULES; T-CELL ACTIVATION</dc:subject>
+					<dc:date>1995</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1995RM54200012</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/10045</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>215</dc:relation>
+					<dc:relation>5</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>219</dc:relation>
+					<dc:relation>105</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/10124</identifier>
+				<datestamp>2015-01-21T14:06:16Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>UNEXPECTED PHENOTYPES AND PREDOMINANT TCR-V GENE USAGE IN RANDOM SELECTED SUBJECTS</dc:title>
+					<dc:creator>ORTOLANI  C</dc:creator>
+					<dc:creator>DANDREA  E</dc:creator>
+					<dc:creator>CIBIN  R</dc:creator>
+					<dc:creator>RADIN  E</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:subject>T LYMPHOCYTE; TCR; PHENOTYPE; DNA ANALYSIS</dc:subject>
+					<dc:date>1994</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1994RC60500005</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/10124</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>27</dc:relation>
+					<dc:relation>8</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>34</dc:relation>
+					<dc:relation>38</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/10289</identifier>
+				<datestamp>2015-01-18T15:45:18Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>THE METHYLATION, OXIDATION AND CRYSTALLOGRAPHIC CHARACTERIZATION OF IMIDAZOLE DERIVATIVES</dc:title>
+					<dc:creator>VAMPA  G</dc:creator>
+					<dc:creator>BENVENUTI  S</dc:creator>
+					<dc:creator>SEVERI  F</dc:creator>
+					<dc:creator>MALMUSI  L</dc:creator>
+					<dc:subject>METHYLATION, OXIDATION CRYSTALLOGRAPHIC CHARACTERIZATION IMIDAZOLE DERIVATIVES</dc:subject>
+					<dc:date>1995</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1995QH74600038</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/10289</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>227</dc:relation>
+					<dc:relation>8</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>234</dc:relation>
+					<dc:relation>32</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/10355</identifier>
+				<datestamp>2015-01-21T13:25:55Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>WHEN DID COMMUNICATION IN THE IMMUNE-SYSTEM BEGIN</dc:title>
+					<dc:creator>COOPER  EL</dc:creator>
+					<dc:creator>ZHANG  Z</dc:creator>
+					<dc:creator>RAFTOS  DA</dc:creator>
+					<dc:creator>HABICHT  GS</dc:creator>
+					<dc:creator>BECK  G</dc:creator>
+					<dc:creator>CONNORS  V</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:creator>OTTAVIANI  E</dc:creator>
+					<dc:creator>SCAPIGLIATI  G</dc:creator>
+					<dc:creator>PARRINELLO  N</dc:creator>
+					<dc:subject>CYTOKINES; EVOLUTION; COMMUNICATION; ANIMAL MODELS</dc:subject>
+					<dc:date>1994</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1994PZ97300006</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/10355</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>203</dc:relation>
+					<dc:relation>15</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>217</dc:relation>
+					<dc:relation>7</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/10484</identifier>
+				<datestamp>2015-01-26T16:17:44Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>THEORETICAL-ANALYSIS OF RESONANT MAGNETOTUNNELING SPECTROSCOPY OF HOLES</dc:title>
+					<dc:creator>Goldoni, G.</dc:creator>
+					<dc:creator>Fasolino, A.</dc:creator>
+					<dc:subject>resonant tunneling, semicondutctors</dc:subject>
+					<dc:date>1994</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1994NE79600107</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/10484</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>991</dc:relation>
+					<dc:relation>3</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>993</dc:relation>
+					<dc:relation>37</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/10524</identifier>
+				<datestamp>2015-01-21T09:05:50Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>MITOCHONDRIAL MODIFICATIONS DURING RAT THYMOCYTE APOPTOSIS - A STUDY AT THE SINGLE-CELL LEVEL</dc:title>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>KALASHNIKOVA  G</dc:creator>
+					<dc:creator>GRASSILLI  E</dc:creator>
+					<dc:creator>CHIAPPELLI  F</dc:creator>
+					<dc:creator>SALVIOLI  S</dc:creator>
+					<dc:creator>CAPRI  M</dc:creator>
+					<dc:creator>BARBIERI  D</dc:creator>
+					<dc:creator>TROIANO  L</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:subject>MITOCHONDRIA, THYMOCYTES, APOPTOSIS</dc:subject>
+					<dc:date>1994</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1994PF63400038</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/10524</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>323</dc:relation>
+					<dc:relation>8</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>330</dc:relation>
+					<dc:relation>214</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/10544</identifier>
+				<datestamp>2015-01-21T09:07:11Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>CELL-DEATH PROTECTION BY 3-AMINOBENZAMIDE - IMPAIRMENT OF CYTOSKELETON FUNCTION IN HUMAN NK CELL-MEDIATED KILLING</dc:title>
+					<dc:creator>MALORNI  W</dc:creator>
+					<dc:creator>RAINALDI  G</dc:creator>
+					<dc:creator>STRAFACE  E</dc:creator>
+					<dc:creator>RIVABENE  R</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>SALVIOLI  S</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:subject>cell death, 3-aminobenzamide, NK cells</dc:subject>
+					<dc:date>1994</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1994ND17600024</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/10544</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>1250</dc:relation>
+					<dc:relation>6</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>1255</dc:relation>
+					<dc:relation>199</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/10586</identifier>
+				<datestamp>2015-01-20T16:21:06Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>3-AMINOBENZAMIDE INDUCES CYTOSKELETON REARRANGEMENT IN M14 MELANOMA-CELLS</dc:title>
+					<dc:creator>MALORNI  W</dc:creator>
+					<dc:creator>RAINALDI  G</dc:creator>
+					<dc:creator>STRAFACE  E</dc:creator>
+					<dc:creator>RIVABENE  R</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>CAPRI  M</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:subject>3-AMINOBENZAMIDE, CYTOSKELETON, M14 MELANOMA-CELLS</dc:subject>
+					<dc:date>1994</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1994NZ24000039</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/10586</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>915</dc:relation>
+					<dc:relation>8</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>922</dc:relation>
+					<dc:relation>202</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/10723</identifier>
+				<datestamp>2015-01-26T16:53:58Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>CURRENT-INDUCED SPIN SEPARATION IN P-DOPED ASYMMETRIC DOUBLE-QUANTUM WELLS</dc:title>
+					<dc:creator>GOLDONI  G</dc:creator>
+					<dc:creator>FASOLINO  A</dc:creator>
+					<dc:subject>spin, semiconductores, quantum wells</dc:subject>
+					<dc:date>1994</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1994ND67400062</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/10723</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>333</dc:relation>
+					<dc:relation>4</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>336</dc:relation>
+					<dc:relation>305</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/10753</identifier>
+				<datestamp>2015-01-20T16:05:56Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>CELL-DEATH PROTECTION BY 3-AMINOBENZAMIDE AND OTHER POLY(ADP-RIBOSE)POLYMERASE INHIBITORS - DIFFERENT EFFECTS ON HUMAN NATURAL-KILLER AND LYMPHOKINE-ACTIVATED KILLER-CELL ACTIVITIES</dc:title>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>SALVIOLI  S</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:creator>RAINALDI  G</dc:creator>
+					<dc:creator>STRAFACE  E</dc:creator>
+					<dc:creator>RIVABENE  R</dc:creator>
+					<dc:creator>MALORNI  W</dc:creator>
+					<dc:subject>3-AMINOBENZAMIDE, cell death,  POLY(ADP-RIBOSE)POLYMERASE INHIBITORS, NATURAL-KILLER ACTIVITY</dc:subject>
+					<dc:date>1994</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1994NA91400015</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/10753</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>525</dc:relation>
+					<dc:relation>6</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>530</dc:relation>
+					<dc:relation>199</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/10928</identifier>
+				<datestamp>2015-01-20T16:06:31Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>LYMPHOCYTE SUBSETS AND NATURAL-KILLER-CELL ACTIVITY IN HEALTHY OLD-PEOPLE AND CENTENARIANS</dc:title>
+					<dc:creator>SANSONI  P</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>BRIANTI  V</dc:creator>
+					<dc:creator>FAGNONI  F</dc:creator>
+					<dc:creator>SNELLI  G</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>MARCATO  A</dc:creator>
+					<dc:creator>PASSERI  G</dc:creator>
+					<dc:creator>ORTOLANI  C</dc:creator>
+					<dc:creator>FORTI  E</dc:creator>
+					<dc:creator>FAGIOLO  U</dc:creator>
+					<dc:creator>PASSERI  M</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:subject>LYMPHOCYTE SUBSETS, NATURAL-KILLER-CELL ACTIVITY, CENTENARIANS</dc:subject>
+					<dc:date>1993</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1993ME65700020</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/10928</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>2767</dc:relation>
+					<dc:relation>7</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>2773</dc:relation>
+					<dc:relation>82</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/10987</identifier>
+				<datestamp>2015-01-20T16:07:03Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>INCREASED CYTOKINE PRODUCTION IN MONONUCLEAR-CELLS OF HEALTHY ELDERLY PEOPLE</dc:title>
+					<dc:creator>FAGIOLO  U</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>SCALA  E</dc:creator>
+					<dc:creator>FANALESBELASIO  E</dc:creator>
+					<dc:creator>ORTOLANI  C</dc:creator>
+					<dc:creator>COZZI  E</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:creator>PAGANELLI  R</dc:creator>
+					<dc:subject>AGING; CYTOKINES; INTERLEUKIN-1; INTERLEUKIN-6; TUMOR NECROSIS FACTOR</dc:subject>
+					<dc:date>1993</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1993LY55500049</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/10987</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>2375</dc:relation>
+					<dc:relation>4</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>2378</dc:relation>
+					<dc:relation>23</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/11069</identifier>
+				<datestamp>2015-01-20T16:12:54Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>50 HZ AC SINUSOIDAL ELECTRIC-FIELDS DO NOT EXERT GENOTOXIC EFFECTS (MICRONUCLEUS FORMATION) IN HUMAN-LYMPHOCYTES</dc:title>
+					<dc:creator>SCARFI  MR</dc:creator>
+					<dc:creator>BERSANI  F</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>ZENI  O</dc:creator>
+					<dc:creator>LIOI  MB</dc:creator>
+					<dc:creator>FRANCESCHETTI  G</dc:creator>
+					<dc:creator>CAPRI  M</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:subject>SINUSOIDAL ELECTRIC-FIELDS, genotoxic effects, LYMPHOCYTES</dc:subject>
+					<dc:date>1993</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1993LM85600008</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/11069</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>64</dc:relation>
+					<dc:relation>5</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>68</dc:relation>
+					<dc:relation>135</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/11156</identifier>
+				<datestamp>2015-01-21T10:25:07Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>POLYMERASE CHAIN-REACTION IN THE EARLY DIAGNOSIS OF HIV-1 INFECTION IN HIGH-RISK SUBJECTS</dc:title>
+					<dc:creator>BORGHI  V</dc:creator>
+					<dc:creator>LAMI  G</dc:creator>
+					<dc:creator>FRIGIERI  G</dc:creator>
+					<dc:creator>CECCHI  MT</dc:creator>
+					<dc:creator>ZOBOLI  G</dc:creator>
+					<dc:creator>TAVIO  M</dc:creator>
+					<dc:creator>PECORARI  M</dc:creator>
+					<dc:creator>MONGIARDO  N</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>DERIENZO  B</dc:creator>
+					<dc:subject>POLYMERASE CHAIN REACTION; HIV-1; PEDIATRIC AIDS</dc:subject>
+					<dc:date>1993</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1993LA94400010</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/11156</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>181</dc:relation>
+					<dc:relation>4</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>184</dc:relation>
+					<dc:relation>16</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/11238</identifier>
+				<datestamp>2015-01-21T09:09:30Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>CYTOFLUOROMETRIC IDENTIFICATION OF 2 POPULATIONS OF DOUBLE POSITIVE (CD4+,CD8+) T-LYMPHOCYTES IN HUMAN PERIPHERAL-BLOOD</dc:title>
+					<dc:creator>ORTOLANI  C</dc:creator>
+					<dc:creator>FORTI  E</dc:creator>
+					<dc:creator>RADIN  E</dc:creator>
+					<dc:creator>CIBIN  R</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:subject>Flow cytometry, CD4+CD8+ cells, T lymphocytes</dc:subject>
+					<dc:date>1993</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1993KT12800041</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/11238</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>601</dc:relation>
+					<dc:relation>9</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>609</dc:relation>
+					<dc:relation>191</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/11241</identifier>
+				<datestamp>2015-01-21T09:10:33Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>CYTOTOXICITY AND CELL-DEATH - STUDIES ON MOLLUSCAN CELLS AND EVOLUTIONARY CONSIDERATIONS</dc:title>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>SALVIOLI  S</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:creator>OTTAVIANI  E</dc:creator>
+					<dc:subject>CYTOTOXICITY; CELL DEATH; MOLLUSK; 3-AMINOBENZAMIDE; EVOLUTION OF IMMUNITY</dc:subject>
+					<dc:date>1992</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1992KT58600029</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/11241</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>287</dc:relation>
+					<dc:relation>5</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>291</dc:relation>
+					<dc:relation>43</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/11310</identifier>
+				<datestamp>2015-01-21T09:12:31Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>SENSITIVITY TO GENOTOXIC AGENTS AND IMMUNOLOGICAL STATUS IN A CASE OF WERNER SYNDROME</dc:title>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>CHIRICOLO  M</dc:creator>
+					<dc:creator>VANNINI  P</dc:creator>
+					<dc:creator>CIAVARELLA  A</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:subject>Genotoxicity, immune system, Werner syndrome</dc:subject>
+					<dc:date>1992</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1992KJ58100049</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/11310</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>429</dc:relation>
+					<dc:relation>3</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>431</dc:relation>
+					<dc:relation>663</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/11312</identifier>
+				<datestamp>2015-01-21T10:26:39Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>INCREASED CYTOKINE PRODUCTION BY PERIPHERAL-BLOOD MONONUCLEAR-CELLS FROM HEALTHY ELDERLY PEOPLE</dc:title>
+					<dc:creator>FAGIOLO  U</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>SANTACATERINA  S</dc:creator>
+					<dc:creator>ORTOLANI  C</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>PAGANELLI  R</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:subject>cytokines, aging, PBMCs, elderly</dc:subject>
+					<dc:date>1992</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1992KJ58100071</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/11312</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>490</dc:relation>
+					<dc:relation>4</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>493</dc:relation>
+					<dc:relation>663</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/11314</identifier>
+				<datestamp>2015-01-21T09:13:40Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>HLA ANTIGENS AND AGING</dc:title>
+					<dc:creator>MORELLINI  M</dc:creator>
+					<dc:creator>TRABACE  S</dc:creator>
+					<dc:creator>LULLI  P</dc:creator>
+					<dc:creator>CAPPELLACCI  S</dc:creator>
+					<dc:creator>BRIOLI  G</dc:creator>
+					<dc:creator>ORRU  D</dc:creator>
+					<dc:creator>PENNESI  G</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>LAMBERTGARDINI  S</dc:creator>
+					<dc:creator>SANSONI  P</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:subject>HLA, aging, immune system</dc:subject>
+					<dc:date>1992</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1992KJ58100074</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/11314</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>499</dc:relation>
+					<dc:relation>2</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>500</dc:relation>
+					<dc:relation>663</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/11315</identifier>
+				<datestamp>2015-01-21T10:17:56Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>NK CELL-ACTIVITY AND LYMPHOCYTE-T PROLIFERATION IN HEALTHY CENTENARIANS</dc:title>
+					<dc:creator>SANSONI  P</dc:creator>
+					<dc:creator>BRIANTI  V</dc:creator>
+					<dc:creator>FAGNONI  F</dc:creator>
+					<dc:creator>SNELLI  G</dc:creator>
+					<dc:creator>MARCATO  A</dc:creator>
+					<dc:creator>PASSERI  G</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:subject>NK cells, T cells, aging, centenarians</dc:subject>
+					<dc:date>1992</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1992KJ58100076</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/11315</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>505</dc:relation>
+					<dc:relation>3</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>507</dc:relation>
+					<dc:relation>663</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/11415</identifier>
+				<datestamp>2015-01-21T10:18:59Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>CHANGES IN CIRCULATING B-CELLS AND IMMUNOGLOBULIN CLASSES AND SUBCLASSES IN A HEALTHY AGED POPULATION</dc:title>
+					<dc:creator>PAGANELLI  R</dc:creator>
+					<dc:creator>QUINTI  I</dc:creator>
+					<dc:creator>FAGIOLO  U</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>ORTOLANI  C</dc:creator>
+					<dc:creator>GUERRA  E</dc:creator>
+					<dc:creator>SANSONI  P</dc:creator>
+					<dc:creator>PUCILLO  LP</dc:creator>
+					<dc:creator>SCALA  E</dc:creator>
+					<dc:creator>COZZI  E</dc:creator>
+					<dc:creator>BERTOLLO  L</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:subject>IMMUNOGLOBULINS; LYMPHOCYTES-B; AGING; IGG SUBCLASSES; CENTENARIANS</dc:subject>
+					<dc:date>1992</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1992JV65400033</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/11415</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>351</dc:relation>
+					<dc:relation>4</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>354</dc:relation>
+					<dc:relation>90</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/11448</identifier>
+				<datestamp>2015-01-21T10:27:46Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>INHIBITION OF APOPTOSIS BY ZINC - A REAPPRAISAL</dc:title>
+					<dc:creator>BARBIERI  D</dc:creator>
+					<dc:creator>TROIANO  L</dc:creator>
+					<dc:creator>GRASSILLI  E</dc:creator>
+					<dc:creator>AGNESINI  C</dc:creator>
+					<dc:creator>CRISTOFALO  EA</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>CAPRI  M</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:subject>apoptosis, zinc</dc:subject>
+					<dc:date>1992</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1992JQ81200008</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/11448</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>1256</dc:relation>
+					<dc:relation>6</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>1261</dc:relation>
+					<dc:relation>187</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/11454</identifier>
+				<datestamp>2015-01-21T13:27:52Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>AGE-RELATED IMBALANCE OF VIRGIN (CD45RA+) AND MEMORY (CD45R0+) CELLS BETWEEN CD4+ AND CD8+ LYMPHOCYTES-T IN HUMANS - A STUDY FROM NEWBORNS TO CENTENARIANS</dc:title>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>ORTOLANI  C</dc:creator>
+					<dc:creator>PAGANELLI  R</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>BARBIERI  D</dc:creator>
+					<dc:creator>SANSONI  P</dc:creator>
+					<dc:creator>FAGIOLO  U</dc:creator>
+					<dc:creator>FORTI  E</dc:creator>
+					<dc:creator>LONDEI  M</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:subject>AGING; CD45; CENTENARIANS; IMMUNE MEMORY; LONGEVITY; LYMPHOCYTE-T</dc:subject>
+					<dc:date>1992</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1992JQ56000004</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/11454</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>118</dc:relation>
+					<dc:relation>9</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>126</dc:relation>
+					<dc:relation>4</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/11534</identifier>
+				<datestamp>2015-01-18T16:02:05Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>DETERMINATION OF THE REACTIVITY OF URACIL DERIVATIVES WITH RESPECT TO METHYL-IODIDE BY HIGH-PERFORMANCE THIN-LAYER CHROMATOGRAPHIC DENSITOMETRY</dc:title>
+					<dc:creator>VAMPA  G</dc:creator>
+					<dc:creator>BENVENUTI  S</dc:creator>
+					<dc:creator>PECORARI  P</dc:creator>
+					<dc:subject>URACIL DERIVATIVES METHYLation HPTLC</dc:subject>
+					<dc:date>1992</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1992JE24800011</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/11534</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>261</dc:relation>
+					<dc:relation>5</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>265</dc:relation>
+					<dc:relation>604</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/11589</identifier>
+				<datestamp>2015-01-21T10:30:45Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>LYMPHOCYTES AND LOW-FREQUENCY ELECTROMAGNETIC-FIELDS</dc:title>
+					<dc:creator>CADOSSI  R</dc:creator>
+					<dc:creator>BERSANI  F</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>ZUCCHINI  P</dc:creator>
+					<dc:creator>EMILIA  G</dc:creator>
+					<dc:creator>TORELLI  G</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:subject>LYMPHOCYTE; ELECTROMAGNETIC FIELDS; LECTIN; GENOTOXICITY</dc:subject>
+					<dc:date>1992</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1992HZ48100007</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/11589</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>2667</dc:relation>
+					<dc:relation>8</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>2674</dc:relation>
+					<dc:relation>6</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/11592</identifier>
+				<datestamp>2015-01-21T10:32:07Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>THYROID AND OTHER ORGAN-SPECIFIC AUTOANTIBODIES IN HEALTHY CENTENARIANS</dc:title>
+					<dc:creator>MARIOTTI  S</dc:creator>
+					<dc:creator>SANSONI  P</dc:creator>
+					<dc:creator>BARBESINO  G</dc:creator>
+					<dc:creator>CATUREGLI  P</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>GIACOMELLI  T</dc:creator>
+					<dc:creator>PASSERI  G</dc:creator>
+					<dc:creator>FAGIOLO  U</dc:creator>
+					<dc:creator>PINCHERA  A</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:subject>THYROID, AUTOANTIBODIES, CENTENARIANS</dc:subject>
+					<dc:date>1992</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1992HZ17500005</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/11592</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>1506</dc:relation>
+					<dc:relation>3</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>1508</dc:relation>
+					<dc:relation>339</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/11608</identifier>
+				<datestamp>2015-01-21T10:38:06Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>APOPTOSIS - PROGRAMMED CELL-DEATH - A ROLE IN THE AGING PROCESS</dc:title>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>TROIANO  L</dc:creator>
+					<dc:creator>TROPEA  F</dc:creator>
+					<dc:creator>GRASSILLI  E</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>BAROZZI  D</dc:creator>
+					<dc:creator>PELLONI  MC</dc:creator>
+					<dc:creator>TAMASSIA  MG</dc:creator>
+					<dc:creator>BELLOMO  G</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:subject>AGING, APOPTOSIS; CELL DEATH; POLY(ADP-RIBOSYL)POLYMERASE; OXYGEN FREE RADICALS; CARNITINE, 3-AMINOBENZAMIDE, ZINC</dc:subject>
+					<dc:date>1992</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1992HX76100005</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/11608</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>1208</dc:relation>
+					<dc:relation>7</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>1214</dc:relation>
+					<dc:relation>55</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/11742</identifier>
+				<datestamp>2015-01-21T10:52:19Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>SELECTIVE DEFICIENCY OF CD4+/CD45RA+ LYMPHOCYTES IN PATIENTS WITH ATAXIA-TELANGIECTASIA</dc:title>
+					<dc:creator>PAGANELLI  R</dc:creator>
+					<dc:creator>SCALA  E</dc:creator>
+					<dc:creator>SCARSELLI  E</dc:creator>
+					<dc:creator>ORTOLANI  C</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>CARMINI  D</dc:creator>
+					<dc:creator>AIUTI  F</dc:creator>
+					<dc:creator>FIORILLI  M</dc:creator>
+					<dc:subject>ATAXIA-TELANGIECTASIA; CD45RA+ CELLS; MITOGEN AND ANTIGEN T-CELL RESPONSES</dc:subject>
+					<dc:date>1992</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1992HH97500003</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/11742</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>84</dc:relation>
+					<dc:relation>8</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>91</dc:relation>
+					<dc:relation>12</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/11803</identifier>
+				<datestamp>2015-01-18T15:58:46Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>CRYSTAL AND MOLECULAR-STRUCTURE OF 18-ALPHA-GLYCYRRHETINIC ACID</dc:title>
+					<dc:creator>ANTOLINI  L</dc:creator>
+					<dc:creator>VAMPA  G</dc:creator>
+					<dc:creator>BENVENUTI  S</dc:creator>
+					<dc:creator>PECORARI  P</dc:creator>
+					<dc:subject>CRYSTAL 18-ALPHA-GLYCYRRHETINIC ACID x-ray</dc:subject>
+					<dc:date>1992</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1992GZ95000011</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/11803</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>65</dc:relation>
+					<dc:relation>3</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>67</dc:relation>
+					<dc:relation>1</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/11864</identifier>
+				<datestamp>2015-01-21T10:53:53Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>IMMUNODEFICIENCY AS A MODEL TO STUDY NEUROIMMUNE DEVELOPMENT - THE CASE OF ATAXIA TELANGIECTASIA</dc:title>
+					<dc:creator>PAGANELLI  R</dc:creator>
+					<dc:creator>SCALA  E</dc:creator>
+					<dc:creator>ORTOLANI  C</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>FIORILLI  M</dc:creator>
+					<dc:subject>Iimmune system, immunodeficiency, ataxia telangiectasia</dc:subject>
+					<dc:date>1991</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1991GQ14200005</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/11864</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>150</dc:relation>
+					<dc:relation>8</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>157</dc:relation>
+					<dc:relation>1</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/11966</identifier>
+				<datestamp>2015-01-20T16:14:39Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>AGING, LONGEVITY, AND CANCER - STUDIES IN DOWNS-SYNDROME AND CENTENARIANS</dc:title>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>FAGNONI  F</dc:creator>
+					<dc:creator>PASSERI  G</dc:creator>
+					<dc:creator>SANSONI  P</dc:creator>
+					<dc:subject>AGING, CANCER, DOWN SYNDROME, CENTENARIANS</dc:subject>
+					<dc:date>1991</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1991FZ45300033</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/11966</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>428</dc:relation>
+					<dc:relation>13</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>440</dc:relation>
+					<dc:relation>621</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/12044</identifier>
+				<datestamp>2015-01-18T15:19:12Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>SEPARATION OF 18-ALPHA-GLYCYRRHETINIC AND 18-BETA-GLYCYRRHETINIC ACID BY HIGH-PERFORMANCE THIN-LAYER CHROMATOGRAPHIC DENSITOMETRY</dc:title>
+					<dc:creator>VAMPA  G</dc:creator>
+					<dc:creator>BENVENUTI  S</dc:creator>
+					<dc:subject>GLYCYRRHETINIC ACID, HPTLC, licorice, Glycirrihza glabra</dc:subject>
+					<dc:date>1991</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1991FN98700022</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/12044</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>479</dc:relation>
+					<dc:relation>4</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>482</dc:relation>
+					<dc:relation>543</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/12157</identifier>
+				<datestamp>2015-01-20T15:56:50Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>AN INVITRO MODEL FOR STUDYING OXIDATIVE DAMAGE AND PROTECTIVE SUBSTANCES IN HUMAN-CELLS</dc:title>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>BAROZZI  D</dc:creator>
+					<dc:creator>BUTTAFOCO  P</dc:creator>
+					<dc:creator>TROIANO  L</dc:creator>
+					<dc:creator>TROPEA  F</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>GRASSILLI  E</dc:creator>
+					<dc:creator>PELIONI  MC</dc:creator>
+					<dc:creator>MARINI  M</dc:creator>
+					<dc:creator>TIOZZO  R</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:subject>OXYGEN FREE RADICALS; BENZAMIDES; LYMPHOCYTES; POLY(ADP-RIBOSYL)POLYMERASE; SULFATE, MULTICENTRIC CLINICAL STUDIES</dc:subject>
+					<dc:date>1991</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1991FA61500014</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/12157</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>77</dc:relation>
+					<dc:relation>7</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>83</dc:relation>
+					<dc:relation>19</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/12154</identifier>
+				<datestamp>2015-01-20T17:13:03Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>CYTOTOXICITY AND IMMUNOCYTE MARKERS IN CELLS FROM THE FRESH-WATER SNAIL PLANORBARIUS-CORNEUS (L) (GASTROPODA-PULMONATA) - IMPLICATIONS FOR THE EVOLUTION OF NATURAL-KILLER-CELLS</dc:title>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>OTTAVIANI  E</dc:creator>
+					<dc:subject>CYTOTOXICITY, PLANORBARIUS-CORNEUS, NK cells</dc:subject>
+					<dc:date>1991</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1991FA42500034</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/12154</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>489</dc:relation>
+					<dc:relation>5</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>493</dc:relation>
+					<dc:relation>21</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/12165</identifier>
+				<datestamp>2015-01-20T16:20:31Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>EFFECT OF LOW-FREQUENCY LOW-ENERGY PULSING ELECTROMAGNETIC-FIELDS ON MICE INJECTED WITH CYCLOPHOSPHAMIDE</dc:title>
+					<dc:creator>CADOSSI  R</dc:creator>
+					<dc:creator>ZUCCHINI  P</dc:creator>
+					<dc:creator>EMILIA  G</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>SANTANTONIO  M</dc:creator>
+					<dc:creator>MANDOLINI  G</dc:creator>
+					<dc:creator>TORELLI  G</dc:creator>
+					<dc:subject>ELECTROMAGNETIC FIELDS; CYCLOPHOSPHAMIDE</dc:subject>
+					<dc:date>1991</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1991EZ18200009</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/12165</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>196</dc:relation>
+					<dc:relation>6</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>201</dc:relation>
+					<dc:relation>19</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/12179</identifier>
+				<datestamp>2015-01-20T16:04:11Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>INHIBIN AND ACTIVIN MODULATE HUMAN MONOCYTE CHEMOTAXIS AND HUMAN LYMPHOCYTE INTERFERON-GAMMA PRODUCTION</dc:title>
+					<dc:creator>PETRAGLIA  F</dc:creator>
+					<dc:creator>SACERDOTE  P</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>ANGIONI  S</dc:creator>
+					<dc:creator>GENAZZANI  AD</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:creator>MUSCETTOLA  M</dc:creator>
+					<dc:creator>GRASSO  G</dc:creator>
+					<dc:subject>INHIBIN, ACTIVIN, MONOCYTES, lymphocytes</dc:subject>
+					<dc:date>1991</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1991EX40300042</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/12179</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>496</dc:relation>
+					<dc:relation>7</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>502</dc:relation>
+					<dc:relation>72</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/12233</identifier>
+				<datestamp>2015-01-20T15:57:23Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>PRECOCIOUS AGING OF THE IMMUNE-SYSTEM IN DOWN-SYNDROME - ALTERATION OF LYMPHOCYTES-B LYMPHOCYTE-T SUBSETS, AND CELLS WITH NATURAL-KILLER MARKERS</dc:title>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>MONTAGNANI  G</dc:creator>
+					<dc:creator>ORTOLANI  C</dc:creator>
+					<dc:creator>MASI  M</dc:creator>
+					<dc:creator>ZANNOTTI  M</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:subject>DOWN SYNDROME; NK CELLS; AGING; BLOOD CELL SUBSETS; PROLIFERATIVE ABILITY</dc:subject>
+					<dc:date>1990</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1990EN77000042</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/12233</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>213</dc:relation>
+					<dc:relation>6</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>218</dc:relation>
+					<dc:relation>7</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/12383</identifier>
+				<datestamp>2015-01-20T16:14:02Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>IMMUNOLOGICAL PARAMETERS IN AGING - STUDIES ON NATURAL IMMUNOMODULATORY AND IMMUNOPROTECTIVE SUBSTANCES</dc:title>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>TROIANO  L</dc:creator>
+					<dc:creator>SALATI  R</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:subject>immunology, aging, natural substances</dc:subject>
+					<dc:date>1990</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1990DR37300007</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/12383</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>53</dc:relation>
+					<dc:relation>5</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>57</dc:relation>
+					<dc:relation>10</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/12471</identifier>
+				<datestamp>2015-01-20T15:47:51Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>LAK ACTIVITY IS INDUCIBLE IN BLOOD MONONUCLEAR-CELLS FROM HUMAN FETUS</dc:title>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>DAGNABRICARELLI  F</dc:creator>
+					<dc:creator>MONTAGNANI  G</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:subject>LAK, BLOOD MONONUCLEAR-CELLS, HUMAN FETUS</dc:subject>
+					<dc:date>1990</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1990DF98200011</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/12471</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>137</dc:relation>
+					<dc:relation>4</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>140</dc:relation>
+					<dc:relation>24</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/12478</identifier>
+				<datestamp>2015-01-20T16:19:56Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>EFFECT OF ADP-RIBOSYL TRANSFERASE INHIBITORS ON THE SURVIVAL OF HUMAN-LYMPHOCYTES AFTER EXPOSURE TO DIFFERENT DNA-DAMAGING AGENTS</dc:title>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:creator>MARINI  M</dc:creator>
+					<dc:creator>ZUNICA  G</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>BOLOGNI  A</dc:creator>
+					<dc:creator>GATTI  C</dc:creator>
+					<dc:creator>BRUNELLI  MA</dc:creator>
+					<dc:subject>ADP-RIBOSYL TRANSFERASE INHIBITORS, LYMPHOCYTES, DNA DAMAGE</dc:subject>
+					<dc:date>1988</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1988DE25200063</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/12478</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>446</dc:relation>
+					<dc:relation>3</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>448</dc:relation>
+					<dc:relation>551</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/12622</identifier>
+				<datestamp>2015-01-20T15:54:54Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>FETAL THYMIC DIFFERENTIATION IN DOWNS-SYNDROME</dc:title>
+					<dc:creator>COSSARIZZA  A</dc:creator>
+					<dc:creator>MONTI  D</dc:creator>
+					<dc:creator>MONTAGNANI  G</dc:creator>
+					<dc:creator>FORABOSCO  A</dc:creator>
+					<dc:creator>DAGNABRICARELLI  F</dc:creator>
+					<dc:creator>FRANCESCHI  C</dc:creator>
+					<dc:subject>THYMUS, DIFFERENTIATION, DOWN SYNDROME</dc:subject>
+					<dc:date>1989</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1989CH41400019</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/12622</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>163</dc:relation>
+					<dc:relation>8</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>170</dc:relation>
+					<dc:relation>14</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/15188</identifier>
+				<datestamp>2015-01-22T17:45:25Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Mitochondrial functionality and mitochondrial DNA content in lymphocytes of vertically-infected HIV+ children with HAART-related lipodystrophy</dc:title>
+					<dc:creator>Cossarizza A.</dc:creator>
+					<dc:creator>Pinti M.</dc:creator>
+					<dc:creator>Moretti L.</dc:creator>
+					<dc:creator>Bricalli D.</dc:creator>
+					<dc:creator>Bianchi R.</dc:creator>
+					<dc:creator>Troiano L.</dc:creator>
+					<dc:creator>Garcia Fernandez M.</dc:creator>
+					<dc:creator>Balli F.</dc:creator>
+					<dc:creator>Brambilla P.</dc:creator>
+					<dc:creator>Mussini C.</dc:creator>
+					<dc:creator>Viganò A.</dc:creator>
+					<dc:subject>Mitochondria, mtDNA, lymphocytes, HIV, HAART, lipodystrophy</dc:subject>
+					<dc:date>2002</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>http://hdl.handle.net/11380/15188</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>4082</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>4089</dc:relation>
+					<dc:relation>100</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/15369</identifier>
+				<datestamp>2015-01-27T10:09:09Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Storia economica albanese e lo stabilirsi dell’egemonia italiana 1912-39</dc:title>
+					<dc:creator>Caselli G.P.</dc:creator>
+					<dc:creator>Thoma G.</dc:creator>
+					<dc:subject>storia economica albania</dc:subject>
+					<dc:date>2003</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>DOI: 10.1410/8620</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/15369</dc:identifier>
+					<dc:language>ita</dc:language>
+					<dc:relation>67</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>108</dc:relation>
+					<dc:relation>1</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/15943</identifier>
+				<datestamp>2015-01-22T10:47:29Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Modeling of Hexanal Sorption Kinetic in an Aldehydes Scavenger Film Intended for Food Packaging Applications.</dc:title>
+					<dc:creator>Del Nobile M. A.</dc:creator>
+					<dc:creator>Buonocore G. G.</dc:creator>
+					<dc:creator>Fava P.</dc:creator>
+					<dc:creator>Piergiovanni L.</dc:creator>
+					<dc:subject>active packaging, hexanal, sorption, oxidation, food</dc:subject>
+					<dc:date>2006</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>http://hdl.handle.net/11380/15943</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>2687</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>2691</dc:relation>
+					<dc:relation>67(7)</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/17391</identifier>
+				<datestamp>2015-01-22T17:45:08Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Early changes in intramitochondrial cardiolipin distribution during apoptosis.</dc:title>
+					<dc:creator>Garcia Fernandez M.</dc:creator>
+					<dc:creator>Troiano L.</dc:creator>
+					<dc:creator>Moretti L.</dc:creator>
+					<dc:creator>Nasi M.</dc:creator>
+					<dc:creator>Pinti M.</dc:creator>
+					<dc:creator>Salvioli S.</dc:creator>
+					<dc:creator>Dobrucki J.</dc:creator>
+					<dc:creator>Cossarizza A.</dc:creator>
+					<dc:subject>cardiolipin, apoptosis.</dc:subject>
+					<dc:date>2002</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>http://hdl.handle.net/11380/17391</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>449</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>455</dc:relation>
+					<dc:relation>13</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/17392</identifier>
+				<datestamp>2015-01-20T17:10:26Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Changes in intramitochondrial cardiolipin distribution in apoptosis-resistant HCW-2 cells, derived from the human promyelocytic leukemia HL-60.</dc:title>
+					<dc:creator>Garcia Fernandez M.</dc:creator>
+					<dc:creator>Troiano L.</dc:creator>
+					<dc:creator>Moretti L.</dc:creator>
+					<dc:creator>Pedrazzi J.</dc:creator>
+					<dc:creator>Salvioli S.</dc:creator>
+					<dc:creator>Castilla-Cortazar I.</dc:creator>
+					<dc:creator>Cossarizza A.</dc:creator>
+					<dc:subject>cardiolipin, apoptosis,  eukemia</dc:subject>
+					<dc:date>2000</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>http://hdl.handle.net/11380/17392</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>290</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>294</dc:relation>
+					<dc:relation>478</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/17659</identifier>
+				<datestamp>2015-01-20T16:21:49Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Skewed T-cell receptor repertoire, decreased thymic output, and predominance of terminally differentiated T cells in ataxia telangiectasia.</dc:title>
+					<dc:creator>Giovannetti A.</dc:creator>
+					<dc:creator>Mazzetta F.</dc:creator>
+					<dc:creator>Caprini E.</dc:creator>
+					<dc:creator>Aiuti A.</dc:creator>
+					<dc:creator>Marziali M.</dc:creator>
+					<dc:creator>Pierdominici M.</dc:creator>
+					<dc:creator>Cossarizza A.</dc:creator>
+					<dc:creator>Chessa L.</dc:creator>
+					<dc:creator>Scala E.</dc:creator>
+					<dc:creator>Quinti L.</dc:creator>
+					<dc:creator>Russo G.</dc:creator>
+					<dc:creator>Fiorilli M.</dc:creator>
+					<dc:subject>T-cells, thymic output, ataxia telangiectasia</dc:subject>
+					<dc:date>2002</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>http://hdl.handle.net/11380/17659</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>4082</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>4089</dc:relation>
+					<dc:relation>100</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/19684</identifier>
+				<datestamp>2015-01-20T16:15:22Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Kinetics of CD4 cells after discontinuation of antiretroviral therapy in patients with virological failure and a CD4 cell count grater than 500 cells</dc:title>
+					<dc:creator>Mussini C.</dc:creator>
+					<dc:creator>Bugarini R.</dc:creator>
+					<dc:creator>Perno C. F.</dc:creator>
+					<dc:creator>Antinori A.</dc:creator>
+					<dc:creator>Borghi V.</dc:creator>
+					<dc:creator>Bertoli A.</dc:creator>
+					<dc:creator>D`Arrigo R.</dc:creator>
+					<dc:creator>Bedini A.</dc:creator>
+					<dc:creator>Cossarizza A.</dc:creator>
+					<dc:creator>Esposito R.</dc:creator>
+					<dc:subject>CD4 cells, antiretroviral therapy, HIV</dc:subject>
+					<dc:date>2002</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>http://hdl.handle.net/11380/19684</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>1551</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>1554</dc:relation>
+					<dc:relation>16</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/20174</identifier>
+				<datestamp>2015-01-29T17:30:57Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Astensione obbligatoria per maternità e diniego di ammissione ad un corso di formazione: su un caso di discriminazione diretta e di azione ex art. 15 l. n. 903/1977 nei confronti di una pubblica amministrazione</dc:title>
+					<dc:creator>Pellacani Giuseppe</dc:creator>
+					<dc:subject>Astensione obbligatoria per maternità, discriminazione diretta, pubblica amministrazione, diniego di ammissione a un corso di formazione</dc:subject>
+					<dc:date>2000</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>http://hdl.handle.net/11380/20174</dc:identifier>
+					<dc:language>ita</dc:language>
+					<dc:relation>358</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>360</dc:relation>
+					<dc:relation>4/2000</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/20178</identifier>
+				<datestamp>2015-01-23T18:43:10Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>La contrattazione collettiva nell’impiego pubblico dopo il d.lgs. n. 396/1997: l’efficacia nel tempo</dc:title>
+					<dc:creator>Pellacani Giuseppe</dc:creator>
+					<dc:subject>contratto collettivo pubblico efficacia tempo durata</dc:subject>
+					<dc:date>2000</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>http://hdl.handle.net/11380/20178</dc:identifier>
+					<dc:language>ita</dc:language>
+					<dc:relation>811</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>836</dc:relation>
+					<dc:relation>5/2000</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/20179</identifier>
+				<datestamp>2015-01-29T17:14:58Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Le novità in tema di lavoro interinale: dalle norme del “collegato fiscale” e del “collegato lavoro” (L. n. 133 e 144/1999) e dal d.m. 31 maggio 1999 alla Finanziaria 2000</dc:title>
+					<dc:creator>Pellacani Giuseppe</dc:creator>
+					<dc:subject>lavoro interinale,  collegato fiscale, collegato lavoro, ipotesi ricorso al lavoro interinale, agenzie di lavoro interinale</dc:subject>
+					<dc:date>2000</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>http://hdl.handle.net/11380/20179</dc:identifier>
+					<dc:language>ita</dc:language>
+					<dc:relation>411</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>415</dc:relation>
+					<dc:relation>5</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/20180</identifier>
+				<datestamp>2015-01-29T17:09:33Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Trasferimento di attività e servizi pubblici a società miste ex art. 22, L. n. 142/1990 ed effetti sui rapporti di lavoro</dc:title>
+					<dc:creator>Pellacani Giuseppe</dc:creator>
+					<dc:subject>pubblici servizi trasferimento attività società miste</dc:subject>
+					<dc:date>2000</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>http://hdl.handle.net/11380/20180</dc:identifier>
+					<dc:language>ita</dc:language>
+					<dc:relation>1296</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>1308</dc:relation>
+					<dc:relation>6</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/20185</identifier>
+				<datestamp>2015-01-23T18:38:05Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>I rapporti fra il diritto del dipendente all'equo premio e la validità del brevetto</dc:title>
+					<dc:creator>Pellacani Giuseppe</dc:creator>
+					<dc:subject>invenzioni lavoratore dipendente equo premio</dc:subject>
+					<dc:date>2000</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>http://hdl.handle.net/11380/20185</dc:identifier>
+					<dc:language>ita</dc:language>
+					<dc:relation>1189</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>1199</dc:relation>
+					<dc:relation>12/2008</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/20186</identifier>
+				<datestamp>2015-01-29T17:19:33Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Questioni in tema di legittimità di clausole contrattuali collettive prevedenti la risoluzione automatica del rapporto al raggiungimento della massima anzianità contributiva. Il caso dell’Ente Poste Italiane s.p.a.</dc:title>
+					<dc:creator>Pellacani Giuseppe</dc:creator>
+					<dc:subject>clausole risoluzione automatica rapporto di lavoro al raggiungimento dell'età pensionabile Poste Italiane</dc:subject>
+					<dc:date>2001</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>http://hdl.handle.net/11380/20186</dc:identifier>
+					<dc:language>ita</dc:language>
+					<dc:relation>60</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>64</dc:relation>
+					<dc:relation>1/2001</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/20188</identifier>
+				<datestamp>2015-01-29T17:27:20Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Elementi distintivi fra invenzioni di servizio e invenzioni d’azienda</dc:title>
+					<dc:creator>Pellacani Giuseppe</dc:creator>
+					<dc:subject>Invenzioni lavoratore dipendente di servizio e di azienda</dc:subject>
+					<dc:date>2001</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>http://hdl.handle.net/11380/20188</dc:identifier>
+					<dc:language>ita</dc:language>
+					<dc:relation>1109</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>1117</dc:relation>
+					<dc:relation>17/2001</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/20194</identifier>
+				<datestamp>2015-01-21T16:51:57Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Globalizzazione dei mercati e internazionalizzazione dei rapporti di lavoro: su alcune questioni relative all’individuazione della legge applicabile al rapporto di lavoro con elementi di estraneità, in Roma e America. Diritto romano comune</dc:title>
+					<dc:creator>Pellacani Giuseppe</dc:creator>
+					<dc:subject>legge applicabile rapporto di lavoro licenziamento</dc:subject>
+					<dc:date>2002</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>http://hdl.handle.net/11380/20194</dc:identifier>
+					<dc:language>ita</dc:language>
+					<dc:relation>197</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>206</dc:relation>
+					<dc:relation>4</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/20196</identifier>
+				<datestamp>2015-01-30T17:14:30Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Lavoro e P.A. Inquadramento, qualifiche e mansioni</dc:title>
+					<dc:creator>Pellacani Giuseppe</dc:creator>
+					<dc:subject>Pubblica amministrazione, inquadramento, qualifiche, mansioni</dc:subject>
+					<dc:date>2003</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>http://hdl.handle.net/11380/20196</dc:identifier>
+					<dc:language>ita</dc:language>
+					<dc:relation>1931</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>1938</dc:relation>
+					<dc:relation>28/2003</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/20197</identifier>
+				<datestamp>2015-01-23T18:19:29Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Prime considerazioni sul lavoro a chiamata o intermittente</dc:title>
+					<dc:creator>Pellacani Giuseppe</dc:creator>
+					<dc:subject>Lavoro intermittente chiamata decreto Biagi</dc:subject>
+					<dc:date>2003</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>http://hdl.handle.net/11380/20197</dc:identifier>
+					<dc:language>ita</dc:language>
+					<dc:relation>730</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>748</dc:relation>
+					<dc:relation>10/2008</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/20740</identifier>
+				<datestamp>2015-01-08T21:33:06Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Histomorphometric study on the osteocyte lacuno-canalicular network in animals of different species. I. Woven-fibered and parallel-fibered bones. It.</dc:title>
+					<dc:creator>Francesca, Remaggi</dc:creator>
+					<dc:creator>Valerio, Canè</dc:creator>
+					<dc:creator>Carla, Palumbo</dc:creator>
+					<dc:creator>Marzia, Ferretti</dc:creator>
+					<dc:subject>Osteocyte lacunae, Osteocyte canaliculi, Collagen texture, Morohometry, Animal species.</dc:subject>
+					<dc:date>1998</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>http://hdl.handle.net/11380/20740</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>145</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>155</dc:relation>
+					<dc:relation>113 (4)</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/21354</identifier>
+				<datestamp>2015-01-22T17:45:15Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Mitochondrial heterogeneity during staurosporine-induced apoptosis in HL60 cells: analysis at the single cells and single organelle level.</dc:title>
+					<dc:creator>Salvioli S.</dc:creator>
+					<dc:creator>Dobrucki J.</dc:creator>
+					<dc:creator>Moretti L.</dc:creator>
+					<dc:creator>Troiano L.</dc:creator>
+					<dc:creator>Garcia Fernandez M.</dc:creator>
+					<dc:creator>Pinti M.</dc:creator>
+					<dc:creator>Pedrazzi J.</dc:creator>
+					<dc:creator>Franceschi C.</dc:creator>
+					<dc:creator>Cossarizza A.</dc:creator>
+					<dc:subject>Mitochondria, staurosporine, apoptosis,</dc:subject>
+					<dc:date>2000</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>http://hdl.handle.net/11380/21354</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>189</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>197</dc:relation>
+					<dc:relation>40</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/303378</identifier>
+				<datestamp>2014-12-27T11:48:51Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Sequential expression during postnatal development of specific markers of junctional and free sarcoplasmic reticulum in chicken pectoralis muscle.</dc:title>
+					<dc:creator>Damiani, E</dc:creator>
+					<dc:creator>Tarugi, P</dc:creator>
+					<dc:creator>Calandra, S</dc:creator>
+					<dc:creator>Margreth, A.</dc:creator>
+					<dc:subject>chicken skeletal muscle, sarcoplasmic reticulum, postnatal development, protein expression</dc:subject>
+					<dc:date>1992</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1992JM41600009</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/303378</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>102</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>114</dc:relation>
+					<dc:relation>153</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/303451</identifier>
+				<datestamp>2015-01-30T17:12:09Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Volumetric behaviour of the ethane-1,2-diol+1,2-dimethoxyethane binary solvent system</dc:title>
+					<dc:creator>G. Franchini</dc:creator>
+					<dc:creator>A. Marchetti</dc:creator>
+					<dc:creator>C. Preti</dc:creator>
+					<dc:creator>L. Tassi</dc:creator>
+					<dc:subject>Densities,  binary mixtures, ethane-1,2-diol (ED), 1,2-dimethoxyethane (DME)</dc:subject>
+					<dc:date>1996</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1996VZ32500005</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/303451</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>357</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>367</dc:relation>
+					<dc:relation>86</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/303611</identifier>
+				<datestamp>2015-01-17T17:12:12Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Ricerche su piante officinali nell'Appennino modenese - Piante spontanee - IV - Indagini sull'olio essenziale di Juniperus  communis L. (ginepro)</dc:title>
+					<dc:creator>M. MELEGARI</dc:creator>
+					<dc:creator>G. VAMPA</dc:creator>
+					<dc:creator>A. BIANCHI</dc:creator>
+					<dc:creator>A. ALBASINI</dc:creator>
+					<dc:creator>S. BENVENUTI</dc:creator>
+					<dc:creator>M. RINALDI</dc:creator>
+					<dc:creator>A. PROVVISIONATO</dc:creator>
+					<dc:subject>Appennino modenese olio essenziale Juniperus  communis L.</dc:subject>
+					<dc:date>1987</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>http://hdl.handle.net/11380/303611</dc:identifier>
+					<dc:language>ita</dc:language>
+					<dc:relation>75</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>91</dc:relation>
+					<dc:relation>118</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/303820</identifier>
+				<datestamp>2015-01-17T17:09:17Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Determination of glycyrrhizin in pharmaceutical preparations an in licorice products by high-performance thin-layer chromatographic densitometry</dc:title>
+					<dc:creator>G. VAMPA</dc:creator>
+					<dc:creator>S. BENVENUTI</dc:creator>
+					<dc:creator>M. MELEGARI</dc:creator>
+					<dc:subject>glycyrrhizin, licorice products, HPTLC</dc:subject>
+					<dc:date>1991</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>http://hdl.handle.net/11380/303820</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>87</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>93</dc:relation>
+					<dc:relation>2</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/303889</identifier>
+				<datestamp>2015-01-20T16:01:54Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>T cell responses to highly active antiretroviral therapy defined by chemokine receptors expression, cytokine production, T cell receptor repertoire and anti-HIV T-lymphocyte activity</dc:title>
+					<dc:creator>A. Giovannetti</dc:creator>
+					<dc:creator>M. Pierdominici</dc:creator>
+					<dc:creator>F. Mazzetta</dc:creator>
+					<dc:creator>S. Salemi</dc:creator>
+					<dc:creator>M. Marziali</dc:creator>
+					<dc:creator>D. Kuonene</dc:creator>
+					<dc:creator>F. Iebba</dc:creator>
+					<dc:creator>EA Lusi</dc:creator>
+					<dc:creator>A. Cossarizza</dc:creator>
+					<dc:creator>F. Aiuti</dc:creator>
+					<dc:subject>T cells, HAART, chemokines,  cytokines,   anti-HIV T-lymphocyte activity</dc:subject>
+					<dc:date>2001</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:000177079200004</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/303889</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>21</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>31</dc:relation>
+					<dc:relation>124</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/303901</identifier>
+				<datestamp>2015-02-11T17:18:35Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>The ethane-1,2-diol - 2-methoxyethanol solvent system. The dependence of the dissociation constant of picric acid on the temperature and composition of the solvent mixture</dc:title>
+					<dc:creator>G. FRANCHINI</dc:creator>
+					<dc:creator>L. TASSI</dc:creator>
+					<dc:creator>G.TOSI</dc:creator>
+					<dc:subject>ethane-1,2-diol,  2-methoxyethanol,  binary solvent system,  dissociation constant,   picric acid, liquid solvent mixture</dc:subject>
+					<dc:date>1987</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>http://hdl.handle.net/11380/303901</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>3129</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>3138</dc:relation>
+					<dc:relation>83</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/304267</identifier>
+				<datestamp>2015-01-30T17:22:44Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Viscosities of 1,2-ethanediol - 2-methoxyethanol solvent mixtures at various temperatures</dc:title>
+					<dc:creator>F. CORRADINI</dc:creator>
+					<dc:creator>G. FRANCHINI</dc:creator>
+					<dc:creator>A. MARCHETTI</dc:creator>
+					<dc:creator>M. TAGLIAZUCCHI</dc:creator>
+					<dc:creator>L. TASSI</dc:creator>
+					<dc:creator>G. TOSI</dc:creator>
+					<dc:subject>Viscosities,  binary solvent mixtures, 1,2-ethanediol, 2-methoxyethanol, 19 temperatures,</dc:subject>
+					<dc:date>1993</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1993MJ94400006</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/304267</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>1019</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>1028</dc:relation>
+					<dc:relation>22</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/304301</identifier>
+				<datestamp>2015-01-13T09:06:36Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Density and excess molar volume values of binary mixtures of 2-chloroethanol plus 1,2-ethanediol</dc:title>
+					<dc:creator>G. FRANCHINI</dc:creator>
+					<dc:creator>A. MARCHETTI</dc:creator>
+					<dc:creator>L. TASSI</dc:creator>
+					<dc:creator>A. ULRICI</dc:creator>
+					<dc:creator>G. VACCARI</dc:creator>
+					<dc:subject>Density; Excess Molar Volume; 2-chloroethanol; 1,2-ethanediol; Solvent System</dc:subject>
+					<dc:date>1999</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:000079509100017</dc:identifier>
+					<dc:identifier>2-s2.0-0039623223</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/304301</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>157</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>166</dc:relation>
+					<dc:relation>89</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/304350</identifier>
+				<datestamp>2015-01-17T15:49:13Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Studies on the genotoxic properties of essential oils with bacillus subtilis rec-assay and Salmonella/microsome reversion assay</dc:title>
+					<dc:creator>F. ZANI</dc:creator>
+					<dc:creator>G. MASSIMO</dc:creator>
+					<dc:creator>S. BENVENUTI</dc:creator>
+					<dc:creator>A. BIANCHI</dc:creator>
+					<dc:creator>A. ALBASINI</dc:creator>
+					<dc:creator>M. MELEGARI</dc:creator>
+					<dc:creator>G. VAMPA</dc:creator>
+					<dc:creator>A. BELLOTTI</dc:creator>
+					<dc:creator>P. MAZZA</dc:creator>
+					<dc:subject>essential oil test ames</dc:subject>
+					<dc:date>1991</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1991FR72300008</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/304350</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>237</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>241</dc:relation>
+					<dc:relation>57</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/304596</identifier>
+				<datestamp>2015-01-20T15:56:03Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>The immunology of exceptional individuals: the lesson of centenarians</dc:title>
+					<dc:creator>C. FRANCESCHI</dc:creator>
+					<dc:creator>D. MONTI</dc:creator>
+					<dc:creator>P. SANSONI</dc:creator>
+					<dc:creator>A. COSSARIZZA</dc:creator>
+					<dc:subject>immunology, centenarians</dc:subject>
+					<dc:date>1995</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>ISI:A1995QC22900005</dc:identifier>
+					<dc:identifier>http://hdl.handle.net/11380/304596</dc:identifier>
+					<dc:language>eng</dc:language>
+					<dc:relation>12</dc:relation>
+					<dc:relation>ELETTRONICO</dc:relation>
+					<dc:relation>16</dc:relation>
+					<dc:relation>16</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<record>
+			<header>
+				<identifier>oai:iris.unimore.it:11380/304651</identifier>
+				<datestamp>2015-01-22T10:02:14Z</datestamp>
+				<setSpec>com_11380_1059967</setSpec>
+				<setSpec>com_11380_1059966</setSpec>
+				<setSpec>col_11380_1059943</setSpec>
+			</header>
+			<metadata>
+				<oai_dc:dc xmlns:oai_dc="http://www.openarchives.org/OAI/2.0/oai_dc/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:doc="http://www.lyncode.com/xoai" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/oai_dc/ http://www.openarchives.org/OAI/2.0/oai_dc.xsd">
+					<dc:title>Previsione delle variazioni di composizione delle atmosfere protettive in imballaggi permeabili</dc:title>
+					<dc:creator>L. PIERGIOVANNI</dc:creator>
+					<dc:creator>S. PASTORELLI</dc:creator>
+					<dc:creator>P. FAVA</dc:creator>
+					<dc:subject>permeabilità, materiali polimerici, atmosfera modificata</dc:subject>
+					<dc:date>1998</dc:date>
+					<dc:type>info:eu-repo/semantics/Articolo su rivista</dc:type>
+					<dc:type>Articolo su rivista</dc:type>
+					<dc:identifier>http://hdl.handle.net/11380/304651</dc:identifier>
+					<dc:language>ita</dc:language>
+					<dc:relation>305</dc:relation>
+					<dc:relation>STAMPA</dc:relation>
+					<dc:relation>305</dc:relation>
+					<dc:relation>37</dc:relation>
+				</oai_dc:dc>
+			</metadata>
+		</record>
+		<resumptionToken completeListSize="29558" cursor="0">MToxMDB8Mjpjb21fMTEzODBfMTA1OTk2N3wzOnw0Onw1Om9haV9kYw==</resumptionToken>
+	</ListRecords>
+</OAI-PMH>

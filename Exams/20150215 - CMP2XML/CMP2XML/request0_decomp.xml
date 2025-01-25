@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OAI-PMH xmlns="http://www.openarchives.org/OAI/2.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.openarchives.org/OAI/2.0/ http://www.openarchives.org/OAI/2.0/OAI-PMH.xsd">
+	<responseDate>2015-02-17T11:23:14Z</responseDate>
+	<request verb="ListSets">https://iris.unimore.it/oai/request</request>
+	<ListSets>
+		<set>
+			<setSpec>com_11380_1059966</setSpec>
+			<setName>Root UNIMORE</setName>
+		</set>
+		<set>
+			<setSpec>com_11380_1059967</setSpec>
+			<setName>Contributo su RIVISTA</setName>
+		</set>
+		<set>
+			<setSpec>com_11380_1059968</setSpec>
+			<setName>LIBRO</setName>
+		</set>
+		<set>
+			<setSpec>com_11380_1059969</setSpec>
+			<setName>Contributo su VOLUME</setName>
+		</set>
+		<set>
+			<setSpec>com_11380_1059970</setSpec>
+			<setName>Atti di CONVEGNO</setName>
+		</set>
+		<set>
+			<setSpec>com_11380_1059971</setSpec>
+			<setName>ALTRO</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059918</setSpec>
+			<setName>Altro</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059919</setSpec>
+			<setName>Banca dati</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059920</setSpec>
+			<setName>Brevetto</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059921</setSpec>
+			<setName>Cartografia</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059922</setSpec>
+			<setName>Composizione</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059923</setSpec>
+			<setName>Design</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059924</setSpec>
+			<setName>Direzione Collane scientifiche</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059925</setSpec>
+			<setName>Direzione o Responsabilità Riviste</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059926</setSpec>
+			<setName>Direzione Scavi archeologici</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059927</setSpec>
+			<setName>Disegno</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059928</setSpec>
+			<setName>Esposizione</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059929</setSpec>
+			<setName>Manufatto</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059930</setSpec>
+			<setName>Mostra</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059931</setSpec>
+			<setName>Partecipazione a progetti di ricerca</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059932</setSpec>
+			<setName>Performance</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059933</setSpec>
+			<setName>Prototipo d'arte e relativi progetti</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059934</setSpec>
+			<setName>Software</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059935</setSpec>
+			<setName>Spin Off</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059936</setSpec>
+			<setName>Working paper</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059937</setSpec>
+			<setName>Abstract in Rivista di Atti di Convegno</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059938</setSpec>
+			<setName>Abstract in Volume di Atti di Convegno</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059939</setSpec>
+			<setName>Poster</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059940</setSpec>
+			<setName>Relazione in Rivista di Atti di Convegno</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059941</setSpec>
+			<setName>Relazione in Volume di Atti di Convegno</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059942</setSpec>
+			<setName>Abstract in Rivista</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059943</setSpec>
+			<setName>Articolo su rivista</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059944</setSpec>
+			<setName>Nota a Sentenza</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059945</setSpec>
+			<setName>Recensione in Rivista</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059946</setSpec>
+			<setName>Scheda bibliografica</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059947</setSpec>
+			<setName>Traduzione in Rivista</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059948</setSpec>
+			<setName>Breve Introduzione</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059949</setSpec>
+			<setName>Capitolo/Saggio con ISBN</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059950</setSpec>
+			<setName>Capitolo/Saggio con ISSN</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059951</setSpec>
+			<setName>Prefazione o Postfazione</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059952</setSpec>
+			<setName>Recensione in Volume</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059953</setSpec>
+			<setName>Schede di catalogo</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059954</setSpec>
+			<setName>Traduzione in Volume</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059955</setSpec>
+			<setName>Voce in Dizionario o Enciclopedia</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059956</setSpec>
+			<setName>Bibliografia</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059957</setSpec>
+			<setName>Commento scientifico</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059958</setSpec>
+			<setName>Concordanza</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059959</setSpec>
+			<setName>Curatela</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059960</setSpec>
+			<setName>Edizione critica</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059961</setSpec>
+			<setName>Indice</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059962</setSpec>
+			<setName>Monografia/Trattato scient. con ISBN</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059963</setSpec>
+			<setName>Monografia/Trattato scient. con ISSN</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059964</setSpec>
+			<setName>Pubblicazioni Fonti inedite</setName>
+		</set>
+		<set>
+			<setSpec>col_11380_1059965</setSpec>
+			<setName>Traduzione di Libro</setName>
+		</set>
+	</ListSets>
+</OAI-PMH>

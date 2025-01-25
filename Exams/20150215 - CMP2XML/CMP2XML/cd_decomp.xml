@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog type="music" media="cd">
+	<cd>
+		<title>Empire Burlesque</title>
+		<artist>Bob Dylan</artist>
+	</cd>
+	<cd>
+		<title>Hide your heart</title>
+		<artist>Bonnie Tyler</artist>
+	</cd>
+</catalog>
