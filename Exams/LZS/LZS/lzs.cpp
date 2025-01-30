@@ -31,7 +31,7 @@ class bitreader {
 		++n_;
 	}
 
-	void pastbits(int numbits) {
+	void pastbits() {
 		while (n_ >= 8) {
 			n_ -= 8;
 		}
@@ -50,7 +50,7 @@ public:
 			for (int bitnum = 7; bitnum >= 0; --bitnum) {
 				readbit(byte_ >> bitnum, numbits);
 				if (n_ == numbits) {
-					pastbits(numbits);
+					pastbits();
 					if (readbits_ != 0) {
 						is_.seekg(curpos);
 					}
@@ -117,7 +117,8 @@ bool end_marker(std::istream& is, bitreader& br) {
 
 uint16_t length_decode(std::istream& is, bitreader& br) {
 
-	uint16_t code;
+	uint16_t code, length = 0;
+	int N = 0;
 
 	auto curpos = is.tellg();
 
@@ -155,9 +156,17 @@ uint16_t length_decode(std::istream& is, bitreader& br) {
 		br(4);
 		return 7;
 	}
-	is.seekg(curpos);
-
-	return 8;
+	if (code == 15) {
+		is.seekg(curpos);
+		while (code == 15) {
+			code = br(4);
+			if(code == 15)
+				++N;
+		}
+		length = code + (15 * N - 7);
+	}
+	
+	return length;
 }
 
 void lzs_decompress(std::istream& is, std::ostream& os) {
@@ -210,6 +219,7 @@ void lzs_decompress(std::istream& is, std::ostream& os) {
 	}
 }
 
+
 int main(int argc, char* argv[]) {
 	std::ifstream is(argv[1], std::ios::binary);
 	std::ofstream os(argv[2]);
@@ -218,4 +228,3 @@ int main(int argc, char* argv[]) {
 
 	return EXIT_SUCCESS;
 }
-
