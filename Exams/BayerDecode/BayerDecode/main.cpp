@@ -144,7 +144,7 @@ void PGM_gray(std::ifstream& is, std::ofstream& os, PGM& img) {
 	os.write(img.rawdata(), img.rawsize());
 }
 
-void PGM_bayer(std::ifstream& is, std::ofstream& os, PGM& bayer_img, PGM& gray_img, std::vector<char> pattern) {
+void PGM_bayer(std::ofstream& os, PGM& bayer_img, PGM& gray_img, std::vector<char> pattern) {
 	os << "P6 " << gray_img.w() << " " << gray_img.h() << " " << "255\n";
 
 	char channel;
@@ -164,6 +164,176 @@ void PGM_bayer(std::ifstream& is, std::ofstream& os, PGM& bayer_img, PGM& gray_i
 	}
 
 	os.write(bayer_img.rawdata(), bayer_img.rawsize());
+}
+
+bool is_rb(size_t i, std::vector<char> pattern) {
+	if (pattern[i / 3] == 'g') {
+		return false;
+	}
+	else {
+		return true;
+	}
+}
+
+void PGM_green(std::ofstream& os, PGM& bayer_img, PGM& green_img, std::vector<char> pattern) {
+	size_t H, V;
+	std::vector<uint8_t> bayer_data = bayer_img.get_data();
+	uint8_t X1, G2, X3, G4, X5, G6, X7, G8, X9;
+
+	for (size_t r = 0; r < bayer_img.h(); ++r) {
+		for (size_t c = 0; c < bayer_img.w(); ++c) {
+			if (!is_rb(c, pattern)) {
+				continue;
+			}
+			else {
+				X5 = bayer_data[r * bayer_img.w() + c];
+				if (r == 0) {
+					X1 = 0;
+					G2 = 0;
+					G8 = bayer_data[(r + 1) * bayer_img.w() + c];
+					X9 = bayer_data[(r + 2) * bayer_img.w() + c];
+					if (c == 0) {
+						X3 = 0;
+						G4 = 0;
+						G6 = bayer_data[r * bayer_img.w() + c + 1];
+						X7 = bayer_data[r * bayer_img.w() + c + 2];
+					}
+					else if (c == 1) {
+						X3 = 0;
+						G4 = bayer_data[r * bayer_img.w() + c - 1];
+						G6 = bayer_data[r * bayer_img.w() + c + 1];
+						X7 = bayer_data[r * bayer_img.w() + c + 2];
+					}
+					else if (c == bayer_img.w() - 2) {
+						X3 = bayer_data[r * bayer_img.w() + c - 2];
+						G4 = bayer_data[r * bayer_img.w() + c - 1];
+						G6 = bayer_data[r * bayer_img.w() + c + 1];
+						X7 = 0;
+					}
+					else if (c == bayer_img.w() - 1) {
+						X3 = bayer_data[r * bayer_img.w() + c - 2];
+						G4 = bayer_data[r * bayer_img.w() + c - 1];
+						G6 = 0;
+						X7 = 0;
+					}
+					else {
+						X3 = bayer_data[r * bayer_img.w() + c - 2];
+						G4 = bayer_data[r * bayer_img.w() + c - 1];
+						G6 = bayer_data[r * bayer_img.w() + c + 1];
+						X7 = bayer_data[r * bayer_img.w() + c + 2];
+					}
+				}
+				else if (r == 1) {
+					X1 = 0;
+					G8 = bayer_data[(r + 1) * bayer_img.w() + c];
+					X9 = bayer_data[(r + 2) * bayer_img.w() + c];
+					if (c == 0) {
+						G2 = bayer_data[(r - 1) * bayer_img.w() + c];
+						X3 = 0;
+						G4 = 0;
+						G6 = bayer_data[r * bayer_img.w() + c + 1];
+						X7 = bayer_data[r * bayer_img.w() + c + 2];
+					}
+					else if (c == 1) {
+						G2 = bayer_data[(r - 1) * bayer_img.w() + c];
+						X3 = 0;
+						G4 = bayer_data[r * bayer_img.w() + c - 1];
+						G6 = bayer_data[r * bayer_img.w() + c + 1];
+						X7 = bayer_data[r * bayer_img.w() + c + 2];
+					}
+					else if (c == bayer_img.w() - 2) {
+						G2 = bayer_data[(r - 1) * bayer_img.w() + c];
+						X3 = bayer_data[r * bayer_img.w() + c - 2];
+						G4 = bayer_data[r * bayer_img.w() + c - 1];
+						G6 = bayer_data[r * bayer_img.w() + c + 1];
+						X7 = 0;
+					}
+					else if (c == bayer_img.w() - 1) {
+						G2 = bayer_data[(r - 1) * bayer_img.w() + c];
+						X3 = bayer_data[r * bayer_img.w() + c - 2];
+						G4 = bayer_data[r * bayer_img.w() + c - 1];
+						G6 = 0;
+						X7 = 0;
+					}
+					else {
+						G2 = bayer_data[(r - 1) * bayer_img.w() + c];
+						X3 = bayer_data[r * bayer_img.w() + c - 2];
+						G4 = bayer_data[r * bayer_img.w() + c - 1];
+						G6 = bayer_data[r * bayer_img.w() + c + 1];
+						X7 = bayer_data[r * bayer_img.w() + c + 2];
+						G8 = bayer_data[(r + 1) * bayer_img.w() + c];
+						X9 = bayer_data[(r + 2) * bayer_img.w() + c];
+					}
+				}
+				else if (r < bayer_img.h() - 2) {
+					X1 = bayer_data[(r - 2) * bayer_img.w() + c];
+					G2 = bayer_data[(r - 1) * bayer_img.w() + c];
+					G8 = bayer_data[(r + 1) * bayer_img.w() + c];
+					X9 = 0;
+					if (c == 0) {
+						X3 = 0;
+						G4 = 0;	
+						G6 = bayer_data[r * bayer_img.w() + c + 1];
+						X7 = bayer_data[r * bayer_img.w() + c + 2];
+					}
+					else if (c == 1) {
+						X3 = 0;
+						G4 = bayer_data[r * bayer_img.w() + c - 1];
+						G6 = bayer_data[r * bayer_img.w() + c + 1];
+						X7 = bayer_data[r * bayer_img.w() + c + 2];
+					}
+					else if (c == bayer_img.w() - 2) {
+						X3 = bayer_data[r * bayer_img.w() + c - 2];
+						G4 = bayer_data[r * bayer_img.w() + c - 1];
+						G6 = bayer_data[r * bayer_img.w() + c + 1];
+						X7 = 0;
+					}
+					else if (c == bayer_img.w() - 1) {
+						X3 = bayer_data[r * bayer_img.w() + c - 2];
+						G4 = bayer_data[r * bayer_img.w() + c - 1];
+						G6 = 0;
+						X7 = 0;
+					}
+					else {
+						X3 = bayer_data[r * bayer_img.w() + c - 2];
+						G4 = bayer_data[r * bayer_img.w() + c - 1];
+						G6 = bayer_data[r * bayer_img.w() + c + 1];
+						X7 = bayer_data[r * bayer_img.w() + c + 2];
+					}
+				}
+				else if (r < bayer_img.h() - 1) {
+					G8 = 0;
+					X9 = 0;
+				}
+				else {
+					if (c == 0) {
+						X3 = 0;
+						G4 = 0;
+					}
+					else if (c == 1) {
+						X3 = 0;
+					}
+					else if (c == bayer_img.w() - 2) {
+						X7 = 0;
+					}
+					else if (c == bayer_img.w() - 1) {
+						G6 = 0;
+						X7 = 0;
+					}
+					else {
+						X1 = bayer_data[(r - 2) * bayer_img.w() + c];
+						G2 = bayer_data[(r - 1) * bayer_img.w() + c];
+						X3 = bayer_data[r * bayer_img.w() + c - 2];
+						G4 = bayer_data[r * bayer_img.w() + c - 1];
+						G6 = bayer_data[r * bayer_img.w() + c + 1];
+						X7 = bayer_data[r * bayer_img.w() + c + 2];
+						G8 = bayer_data[(r + 1) * bayer_img.w() + c];
+						X9 = bayer_data[(r + 2) * bayer_img.w() + c];
+					}
+				}
+			}
+		}
+	}
 }
 
 int main(int argc, char* argv[]) {
@@ -195,7 +365,16 @@ int main(int argc, char* argv[]) {
 	if (!os2)
 		return EXIT_FAILURE;
 	PGM out_bayer(input_img.w() * 3, input_img.h(), 255, is);
-	PGM_bayer(is, os2, out_bayer, out_gray, pattern);
+	PGM_bayer(os2, out_bayer, out_gray, pattern);
+	out.clear();
+
+	//green interpolation from R and B bytes
+	out = prefix + "_green.ppm";
+	std::ofstream os3(out, std::ios::binary);
+	if (!os3)
+		return EXIT_FAILURE;
+	PGM out_green(input_img.w() * 3, input_img.h(), 255, is);
+	PGM_green(os3, out_gray, out_green, pattern);
 	out.clear();
 
 	return EXIT_SUCCESS;
