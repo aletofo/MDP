@@ -39,11 +39,11 @@ public:
 
 	double get_buffer(size_t index) {
 		std::string buf;
-		char ch;
+		unsigned char ch;
 
 		for (size_t i = 0; i < 4; ++i) {
 			char buffer[3];
-			ch = static_cast<char>(data_[index + i]);
+			ch = static_cast<unsigned char>(data_[index + i]);
 			std::snprintf(buffer, sizeof(buffer), "%02X", ch);
 			buf += buffer;
 		}
@@ -56,15 +56,38 @@ public:
 	auto rawsize() { return data_.size() * sizeof(uint8_t); }
 };
 
+void skip_comments(std::ifstream& is) {
+	char ch;
+	while (is >> ch) {  // Legge il primo carattere non whitespace
+		if (ch == '#') {
+			is.ignore(std::numeric_limits<std::streamsize>::max(), '\n');  // Ignora tutto fino a fine riga
+		}
+		else {
+			is.unget(); // Rimettiamo il carattere valido nel flusso
+			break;
+		}
+	}
+}
+
 void compress(std::ifstream& is, std::ofstream& os, size_t N) {
 	std::string token;
 	std::string width, height, maxval;
 	size_t w, h, mv;
+	std::vector<char> alphabet = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+									'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+									'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
+									'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D',
+									'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N',
+									'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X',
+									'Y', 'Z', '.', '-', ':', '+', '=', '^', '!', '/',
+									'*', '?', '&', '<', '>', '(', ')', '[', ']', '{',
+									'}', '@', '%', '$', '#' };
 
 	//header
 	is >> token;
 	if (token != "P6")
 		return;
+	skip_comments(is);
 	is >> width;
 	is >> height;
 	is >> maxval;
@@ -85,20 +108,21 @@ void compress(std::ifstream& is, std::ofstream& os, size_t N) {
 	double buffer, og_value;
 	std::vector<std::vector<size_t>> z85;
 	z85.resize(data_size / 4);
-	int counter = 4;
+	int pos = 4, last_pos = 4;
 
 	for (size_t i = 0; i < data_size / 4; ++i) {
 		z85[i].resize(5);
 		std::fill(z85[i].begin(), z85[i].end(), 0);
 		og_value = img.get_buffer(i * 4);
 		buffer = og_value;
-		while (og_value > 85.0) {
+		pos = 4;
+		
+		while (1) {
 			while (buffer > 85.0) {
 				buffer /= 85.0;
-				--counter;
+				--pos;
 			}
-			z85[i][counter] = static_cast<size_t>(buffer);
-			counter = 4;
+			z85[i][pos] = static_cast<size_t>(buffer);
 			buffer = std::floor(buffer);
 			while (buffer < og_value) {
 				buffer *= 85.0;
@@ -108,31 +132,32 @@ void compress(std::ifstream& is, std::ofstream& os, size_t N) {
 			buffer /= 85.0;
 			og_value -= buffer;
 			buffer = og_value;
+			if (og_value < 85) {
+				z85[i][4] = static_cast<size_t>(buffer);
+				break;
+			}
+			if (og_value == 85) {
+				z85[i][4] = 0;
+				break;
+			}
+			pos = 4;
 		}
+
 	}
 	//now let's output the z85 characters considering N rotation
-	std::vector<char> alphabet = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
-									'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
-									'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
-									'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D',
-									'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N',
-									'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X',
-									'Y', 'Z', '.', '-', ':', '+', '=', '^', '!', '/',
-									'*', '?', '&', '<', '>', '(', ')', '[', ']', '{',
-									'}', '@', '%', '$', '#' };
 	size_t curr_N = 0;
 	size_t tmp;
 	for (std::vector<size_t> v : z85) {
 		for (size_t index : v) {
 			if (curr_N > index) {
-				tmp = curr_N;
+				tmp = curr_N - index;
 				while (tmp > 85) {
-					tmp = curr_N - 85;
+					tmp -= 85;
 				}
-				os << alphabet[85 - tmp + index];
+				os.put(alphabet[85 - tmp]);
 			}
 			else {
-				os << alphabet[index - curr_N];
+				os.put(alphabet[index - curr_N]);
 			}
 			curr_N += N;
 		}
@@ -153,7 +178,7 @@ int main(int argc, char* argv[]) {
 		std::ifstream is(argv[3], std::ios::binary);
 		if (!is)
 			return EXIT_FAILURE;
-		std::ofstream os(argv[4]);
+		std::ofstream os(argv[4], std::ios::binary);
 		if (!os)
 			return EXIT_FAILURE;
 		compress(is, os, N);
