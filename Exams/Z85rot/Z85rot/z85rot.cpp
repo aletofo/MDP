@@ -8,6 +8,7 @@
 #include <algorithm>
 #include <iostream>
 #include <fstream>
+#include <filesystem>
 
 class PPMimg {
 	size_t width_, height_, maxval_;
@@ -16,6 +17,10 @@ class PPMimg {
 
 public:
 	PPMimg(size_t w, size_t h, size_t mv, std::ifstream& is) : width_(w), height_(h), maxval_(mv), is_(is), data_(w * h) {}
+
+	void pad(uint8_t byte) {
+		data_.push_back(byte);
+	}
 
 	void filldata() {
 		char ch;
@@ -29,10 +34,13 @@ public:
 				data_[r * width_ + c] = byte;
 			}
 		}
-
 		while (data_.size() % 4 != 0) {
-			data_.push_back(0);
+			pad(0);
 		}
+	}
+
+	void popdata() {
+		data_.pop_back();
 	}
 
 	size_t get_size() { return data_.size(); }
@@ -118,7 +126,7 @@ void compress(std::ifstream& is, std::ofstream& os, size_t N) {
 		pos = 4;
 		
 		while (1) {
-			while (buffer > 85.0) {
+			while (buffer >= 85.0) {
 				buffer /= 85.0;
 				--pos;
 			}
@@ -136,10 +144,7 @@ void compress(std::ifstream& is, std::ofstream& os, size_t N) {
 				z85[i][4] = static_cast<size_t>(buffer);
 				break;
 			}
-			if (og_value == 85) {
-				z85[i][4] = 0;
-				break;
-			}
+			
 			pos = 4;
 		}
 
@@ -164,8 +169,120 @@ void compress(std::ifstream& is, std::ofstream& os, size_t N) {
 	}
 }
 
-void decompress(std::ifstream& is, std::ofstream& os, size_t N) {
+std::map<char, uint32_t> build_map(std::vector<char> v) {
+	std::map<char, uint32_t> map;
+	uint32_t i = 0;
 
+	for (unsigned char ch : v) {
+		map.emplace(ch, i);
+		++i;
+	}
+	return map;
+}
+
+void write_bigendian(uint32_t& value, std::ofstream& os) {
+	uint8_t bytes[4] = {
+	   static_cast<uint8_t>((value >> 24) & 0xFF),  // Byte più significativo
+	   static_cast<uint8_t>((value >> 16) & 0xFF),
+	   static_cast<uint8_t>((value >> 8) & 0xFF),
+	   static_cast<uint8_t>(value & 0xFF)           // Byte meno significativo
+	};
+
+	os.write(reinterpret_cast<char*>(bytes), sizeof(bytes));
+}
+
+void decompress(std::ifstream& is, std::ofstream& os, size_t N) {
+	std::string width, height;
+	size_t w, h;
+	char ch;
+	std::vector<char> alphabet = { '0', '1', '2', '3', '4', '5', '6', '7', '8', '9',
+									'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j',
+									'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't',
+									'u', 'v', 'w', 'x', 'y', 'z', 'A', 'B', 'C', 'D',
+									'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N',
+									'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X',
+									'Y', 'Z', '.', '-', ':', '+', '=', '^', '!', '/',
+									'*', '?', '&', '<', '>', '(', ')', '[', ']', '{',
+									'}', '@', '%', '$', '#' };
+
+	std::map<char, uint32_t> map = build_map(alphabet);
+	
+	while (is.get(ch)) {
+		if (ch == ',') {
+			break;
+		}
+		width.push_back(ch);
+	}
+	while (is.get(ch)) {
+		if (ch == ',') {
+			break;
+		}
+		height.push_back(ch);
+	}
+	
+	w = std::stoul(width);
+	h = std::stoul(height);
+
+	os << "P6\n" << width << " " << height << "\n" << 255 << "\n";
+
+	PPMimg img(w * 3, h, 255, is);
+	while (img.get_size() % 4 != 0) {
+		img.pad(0);
+	}
+	size_t filesize = img.get_size();
+	
+	uint32_t total = 0;
+	uint32_t byte;
+	size_t curr_N = 0, tmp;
+
+	if (N == 0) {
+		for (int j = 0; j < filesize / 4; ++j) {
+
+			for (int i = 4; i >= 0; --i) {
+				is.get(ch);
+				byte = map[ch];
+
+				total += byte * static_cast<uint32_t>(std::pow(85, i));
+			}
+			write_bigendian(total, os);
+			total = 0;
+		}
+	}
+	else {
+		for (int j = 0; j < filesize / 4; ++j) {
+
+			for (int i = 4; i >= 0; --i) {
+				is.get(ch);
+				if (map[ch] + curr_N < 85) {
+					byte = map[ch] + curr_N;
+				}
+				else {
+					tmp = curr_N;
+					if (tmp > 85) {
+						while (tmp > 85) {
+							tmp -= 85;
+						}
+						if (tmp + map[ch] < 85) {
+							byte = map[ch] + tmp;
+						}
+						else {
+							tmp = (map[ch] + tmp) - 85;
+							byte = tmp;
+						}
+					}
+					else {
+						tmp = 85 - map[ch];
+						tmp = curr_N - tmp;
+						byte = tmp;
+					}
+				}
+				total += byte * static_cast<uint32_t>(std::pow(85, i));
+				curr_N += N;
+			}
+			write_bigendian(total, os);
+			total = 0;
+		}
+	}
 }
 
 int main(int argc, char* argv[]) {
@@ -184,7 +301,7 @@ int main(int argc, char* argv[]) {
 		compress(is, os, N);
 	}
 	else if (command == "d") {
-		std::ifstream is(argv[3]);
+		std::ifstream is(argv[3], std::ios::binary);
 		if (!is)
 			return EXIT_FAILURE;
 		std::ofstream os(argv[4], std::ios::binary);
