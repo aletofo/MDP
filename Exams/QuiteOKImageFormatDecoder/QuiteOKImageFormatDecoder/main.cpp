@@ -170,11 +170,13 @@ void luma(uint8_t diff_g, uint8_t dr_dg, uint8_t db_dg, std::vector<uint8_t>& pi
         range_rb.push_back(val);
         ++val;
     }
-    int16_t r, g, b;
+    int16_t r, g, b, dr, db;
 
     g = pix[1] + range_g[diff_g];
-    r = range_rb[dr_dg] + range_g[diff_g];
-    b = range_rb[db_dg] + range_g[diff_g];
+    dr = range_rb[dr_dg] + range_g[diff_g];
+    db = range_rb[db_dg] + range_g[diff_g];
+    r = pix[0] + dr;
+    b = pix[2] + db;
 
     if (r > 255) {
         r -= 255;
@@ -230,17 +232,14 @@ void bit2chunk(std::ifstream& is, std::vector<std::vector<uint8_t>> pixels, uint
         img.push_pixel(prev_pixel);
     }
     else if (tag == 2) {
-        std::vector<uint8_t> cur_pixel;
-        cur_pixel.resize(4);
-        cur_pixel[3] = prev_pixel[3];
         uint8_t diff_green = info;
         char ch;
         is.get(ch);
         uint8_t buf = static_cast<uint8_t>(ch);
         uint8_t dr_dg = buf >> 4;
         uint8_t db_dg = buf << 4;
-        db_dg = buf >> 4;
-        //r and b of new pixel are calculated as r = (dr - dg) - diff_green and b = (db - dg) - diff_green
+        db_dg = db_dg >> 4;
+        //dr and db of new pixel are calculated as dr = (dr - dg) - diff_green and db = (db - dg) - diff_green
         luma(diff_green, dr_dg, db_dg, prev_pixel);
         img.push_pixel(prev_pixel);
     }
