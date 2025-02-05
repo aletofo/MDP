@@ -10,8 +10,8 @@
 
 class bitreader {
 	uint8_t buffer_ = 0;
-	size_t n_ = 0;
-	size_t counter_ = 0;
+	int n_ = 0;
+	int counter_ = 0;
 	char curr_ch;
 	uint8_t curr_x;
 	std::ifstream& is_;
@@ -21,8 +21,6 @@ class bitreader {
 		++n_;
 		if (n_ == 8) {
 			n_ = 0;
-			is_.get(curr_ch);
-			curr_x = static_cast<uint8_t>(curr_ch);
 		}
 	}
 
@@ -43,6 +41,12 @@ public:
 					value = buffer_;
 					buffer_ = 0;
 					break;
+				}
+				else {
+					if (n_ == 0) {
+						is_.get(curr_ch);
+						curr_x = static_cast<uint8_t>(curr_ch);
+					}
 				}
 			}
 		}
@@ -127,8 +131,9 @@ void writeLittleEndian(std::ofstream& os, int16_t value) {
 	os.write(reinterpret_cast<char*>(bytes), 2);
 }
 
-void readslice(std::ifstream& is, std::ofstream& os, lms_state& state) {
+std::vector<uint16_t> readslice(std::ifstream& is, std::ofstream& os, lms_state& state) {
 	bitreader br(is);
+	std::vector<uint16_t> slice;
 
 	uint8_t sf_quant = br(4);
 	double sf = std::round(std::pow(sf_quant + 1, 2.75));
@@ -176,8 +181,21 @@ void readslice(std::ifstream& is, std::ofstream& os, lms_state& state) {
 		}
 		state.history_[3] = s;
 
-		os.write(reinterpret_cast<char*>(&s), sizeof(s));
+		//os.write(reinterpret_cast<char*>(&s), sizeof(s));
+		slice.push_back(s);
 	}
+	return slice;
+}
+
+void alternate_write(std::ofstream& os, std::vector<std::vector<uint16_t>> slices) {
+
+	for (int i = 0; i < 20; ++i) {
+		for (std::vector<uint16_t> s : slices) {
+			uint16_t x = s[i];
+			os.write(reinterpret_cast<char*>(&x), sizeof(x));
+		}
+	}
+	
 }
 
 void decompress(std::ifstream& is, std::ofstream& os) {
@@ -204,9 +222,9 @@ void decompress(std::ifstream& is, std::ofstream& os) {
 		token = BEread(is, 3, token);
 		uint32_t samplerate = std::stoul(token, nullptr, 16);
 		token = BEread(is, 2, token);
-		uint16_t fsamples = std::stoul(token, nullptr, 16); //nel primo frame ho 5120 (256*20)
+		uint16_t fsamples = static_cast<uint16_t>(std::stoul(token, nullptr, 16)); //nel primo frame ho 5120 (256*20)
 		token = BEread(is, 2, token);
-		uint16_t fsize = std::stoul(token, nullptr, 16);
+		uint16_t fsize = static_cast<uint16_t>(std::stoul(token, nullptr, 16));
 
 		framehdr hdr(num_channels, samplerate, fsamples, fsize);
 		std::vector<lms_state> states;
@@ -218,14 +236,17 @@ void decompress(std::ifstream& is, std::ofstream& os) {
 		}
 
 		uint16_t curpos = 8 + num_channels * 16; //read bytes since the beginning of the frame
-		
+		std::vector<std::vector<uint16_t>> slices;
+		std::vector<uint16_t> slice;
 		//until end of frame is reached
 		for (int s = 0; s < 256; ++s) { //for each slice(they are 256)
 			for (int c = 0; c < num_channels; ++c) {
-				readslice(is, os, states[c]);
+				slice = readslice(is, os, states[c]);
+				slices.push_back(slice);
 			}
+			alternate_write(os, slices);
+			slices.clear();
 		}
-
 	}
 }
 
