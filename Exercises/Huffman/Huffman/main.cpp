@@ -189,7 +189,7 @@ void compress(const std::string& input_filename, const std::string& output_filen
 		error("Cannot open file " + input_filename + " for reading");
 	}
 
-	std::vector<uint8_t> v{ std::istreambuf_iterator<char>{is}, std::istreambuf_iterator<char>() };
+	std::vector<uint8_t> v{ std::istreambuf_iterator<char>{is}, std::istreambuf_iterator<char>() }; //ogni char dell'is assegnato a una pso del vettore
 
 	auto f = std::ranges::for_each(v, frequency<uint8_t, uint64_t>{}).fun;
 

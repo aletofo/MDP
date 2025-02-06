@@ -213,7 +213,8 @@ void decompress(std::ifstream& is, std::ofstream& os) {
 	token = BEread(is, 4, token);
 	samples = std::stoul(token, nullptr, 16); //953586 
 	//endfilehdr
-	int nframes = static_cast<int>(std::ceil(samples / (256 * 20)));
+	double num = static_cast<double>(samples) / (256.0 * 20.0);
+	int nframes = std::ceil(num);
 
 	for (int i = 0; i < nframes; ++i) { //for each frame(quanti sono???)
 		//framehdr
