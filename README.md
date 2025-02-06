@@ -1,1 +1,1 @@
-(not) funny compression and decompression algorithms for images, text files etc. 😖
+(not) funny compression and decompression algorithms for images, audio files, text files, binary files etc. 😖
