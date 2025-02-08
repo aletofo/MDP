@@ -114,6 +114,9 @@ void decompress(std::ifstream& is, std::ofstream& os) {
 	uint8_t IDflags;
 	is.read(reinterpret_cast<char*>(&IDflags), sizeof(IDflags));
 
+	//build the PPM header
+	os << "P6\n" << w << " " << h << " " << 255 << "\n";
+
 	//Data Rasters
 	std::map<uint16_t, uint16_t> dict;
 
@@ -131,29 +134,49 @@ void decompress(std::ifstream& is, std::ofstream& os) {
 		uint8_t BBcount;
 		is.read(reinterpret_cast<char*>(&BBcount), sizeof(BBcount));
 		size_t bit_i = 0, BBcount_bits = BBcount * 8;
+
 		while (bit_i <= BBcount_bits) {
+			//add a bit to the the code size
 			if (dict_index > (std::pow(2, size))) {
 				if(size + 1 <= 12)
 					++size;
+				else {
+					//std::cout << "\nmaxsize at pos: " << is.tellg() << "\n";
+					uint16_t color_index = br(static_cast<int>(size));
+					if (color_index != CLEARcode) {
+						std::cout << "stream ERROR\n";
+						return;
+					}
+					else {
+						dict.clear();
+						for (uint16_t i = 0; i < CLEARcode + 2; ++i) {
+							dict.emplace(i, i);
+						}
+						dict_index = CLEARcode + 2;
+						bit_i += size;
+						continue;
+					}
+				}
 			}
+			//end of the raster?
 			if (bit_i == BBcount_bits) {
-				std::cout << is.tellg() << " - ";
+				//std::cout << is.tellg() << " - ";
 				break;
 			}
+			//read the code
 			uint16_t color_index = br(static_cast<int>(size));
+			//check if it's CLEAR code or EOI
 			if (color_index == EOI) {
 				//break;
-				//std::cout << "ciao";
+				//std::cout << " <<EOI>> ";
+				bit_i += size;
+				continue;
 			}
 			if (color_index == CLEARcode) {
+				//std::cout << " <<CLEAR>> ";
 				dict.clear();
 				for (uint16_t i = 0; i < CLEARcode + 2; ++i) {
-					if (i == CLEARcode)
-						dict.emplace(i, CLEARcode);
-					else if (i == CLEARcode + 1)
-						dict.emplace(i, EOI);
-					else
-						dict.emplace(i, i);
+					dict.emplace(i, i);
 				}
 				dict_index = CLEARcode + 2;
 			}
@@ -163,10 +186,23 @@ void decompress(std::ifstream& is, std::ofstream& os) {
 			}
 
 			bit_i += size;
+
+			auto curpos = is.tellg();
+			is.read(reinterpret_cast<char*>(&raster_end), sizeof(raster_end));
+			is.seekg(curpos);
+			if (raster_end == 0x3B00) { //end
+				break;
+			}
 		}
-		auto curpos = is.tellg();
-		is.read(reinterpret_cast<char*>(&raster_end), sizeof(raster_end));
-		is.seekg(curpos);
+		//write the right pixel in output
+		for (int i = 258; i < dict.size(); ++i) {
+			uint16_t ct_index = dict[i];
+			std::vector<uint8_t> rgb = colormap[static_cast<uint8_t>(ct_index)];
+			for (uint8_t byte : rgb) {
+				os << byte;
+			}
+		}
+
 	}
 	std::cout << is.tellg();
 }
