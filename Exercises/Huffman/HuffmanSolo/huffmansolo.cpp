@@ -1,115 +1,52 @@
-#include <fstream>
-#include <string>
-#include <iostream>
-#include <vector>
-#include <bit>
 #include <algorithm>
-#include <unordered_map>
+#include <array>
+#include <bit>
+#include <format>
+#include <fstream>
+#include <iterator>
+#include <iostream>
 #include <ranges>
+#include <string>
+#include <vector>
+#include <unordered_map>
+#include <cstdint>
+#include <memory>
+#include <random>
 
-using namespace::std;
-
-class bitwriter {
-	uint8_t buffer_;
-	size_t n_ = 0;
-	std::ostream& os_;
-
-	void writebit(uint64_t curbit) {
-		buffer_ = (buffer_ << 1) | (curbit & 1);
-		++n_;
-		if (n_ == 8) {
-			os_.put(buffer_);
-			n_ = 0;
-		}
-	}
-public:
-	bitwriter(std::ostream& os) : os_(os) {}
-	~bitwriter() {
-		flush();
-	}
-	std::ostream& operator()(uint64_t x, uint64_t numbits) {
-		while (numbits-- > 0) {
-			writebit(x >> numbits);
-		}
-		return os_;
-	}
-	std::ostream& flush(int padbit = 0) {
-		while (n_ > 0) {
-			writebit(padbit);
-		}
-		return os_;
+struct frequency {
+	std::unordered_map<uint8_t, size_t> freq_;
+	void operator() (uint8_t sym) {
+		freq_[sym]++;
 	}
 };
 
-class bitreader {
-	uint8_t buffer_;
-	size_t n_ = 0;
-	std::istream& is_;
-
-	uint64_t readbit() {
-		if (n_ == 0) {
-			buffer_ = is_.get();
-			n_ = 8;
-		}
-		--n_;
-		return (buffer_ >> n_) & 1;
-	}
-public:
-	bitreader(std::istream& is) : is_(is) {}
-	uint64_t operator()(uint64_t numbits) {
-		uint64_t u = 0;
-		while (numbits-- > 0) {
-			u = (u << 1) | readbit();
-		}
-		return u;
-	}
-	bool fail() const {
-		return is_.fail();
-	}
-	operator bool() const {
-		return !fail();
-	}
-};
-
-//template<typename T, typename CT = uint64_t>
-unordered_map<uint8_t, uint64_t> frequencies(vector<uint8_t>& v) {
-	unordered_map<uint8_t, uint64_t> freq;
-
-	for (const auto& x : v) {
-		//unsigned char u = static_cast<unsigned char>(x);
-		freq[x] += 1;
-	}
-
-	//sort(freq.begin(), freq.end());
-	return freq;
-}
-
+template<typename T>
 struct huffman {
 	struct node {
-		uint8_t sym_;
-		uint64_t freq_;
+		T sym_;
+		size_t freq_;
+
 		node* left_;
 		node* right_;
 	};
+	std::vector<std::unique_ptr<node>> nodes_;
+
 	struct nodeptr_less {
-		bool operator()(const node* a, const node* b) {
+		bool operator() (node* a, node* b) {
 			return a->freq_ > b->freq_;
 		}
 	};
 
-	vector<unique_ptr<node>> nodes_;
-
 	template<typename... Ts>
-	node* new_node(Ts... args) {
-		nodes_.emplace_back(std::make_unique<node>(std::forward<Ts>(args)...));
+	node* make_node(T sym, size_t freq, node* l, node* r) {
+		nodes_.emplace_back(std::make_unique<node>(sym, freq, l, r));
 		return nodes_.back().get();
 	}
 
-	std::unordered_map<uint8_t, std::pair<uint64_t, uint64_t>> code_map; // sym -> {code, len}
-
-	void generate_codes(const node* n, uint64_t code = 0, uint64_t len = 0) {
-		if (n->left_ == 0) {
-			code_map[n->sym_] = { code, len };
+	std::unordered_map<T, std::pair<size_t, size_t>> codes_map;
+	void generate_codes(node* n, size_t code, size_t len = 0) {
+		if (n->left_ == nullptr) {
+			codes_map.emplace(n->sym_, std::make_pair(code, len));
 		}
 		else {
 			generate_codes(n->left_, (code << 1) | 0, len + 1);
@@ -117,119 +54,84 @@ struct huffman {
 		}
 	}
 
-	huffman() {};
-
-	huffman(unordered_map<uint8_t, uint64_t> map){
-		vector<node*> v;
-		for (const auto& [s, f] : map) {
-			v.emplace_back(new_node(s, f)); //'emplace' puts directly in the container the object without copies
+	std::vector<std::tuple<size_t, T, size_t>> canonical;
+	std::unordered_map<T, std::pair<size_t, size_t>> canonical_codes_map;
+	void make_canonical() {
+		for (auto& [sym, pair] : codes_map) {
+			auto [code, len] = pair;
+			canonical.emplace_back(len, sym, code);
 		}
-		
-		ranges::sort(v, nodeptr_less{});
+		std::ranges::sort(canonical);
+
+		size_t curr_code = 0, curr_len = 0;
+		for (auto& [len, sym, code] : canonical) {
+			size_t addbits = len - curr_len;
+			curr_code <<= addbits;
+			canonical_codes_map.emplace(sym, std::make_pair(curr_code, len));
+			code = curr_code;
+			curr_len = len;
+			++curr_code;
+		}
+	}
+
+	huffman() {}
+
+	//template<std::ranges::range R>
+	huffman(frequency f) {
+		std::vector<node*> v;
+		for (auto& [sym, counter] : f.freq_) {
+			node* n = make_node(sym, counter, nullptr, nullptr);
+			v.emplace_back(n);
+		}
+		std::ranges::sort(v, nodeptr_less{});
 
 		while (v.size() > 1) {
 			node* n1 = v.back();
 			v.pop_back();
 			node* n2 = v.back();
 			v.pop_back();
-			node* n = new_node(0, n1->freq_ + n2->freq_, n1, n2);
 
-			auto pos = ranges::lower_bound(v, n, nodeptr_less{});
+			node *n = make_node(0, n1->freq_ + n2->freq_, n1, n2);
+			auto pos = std::ranges::lower_bound(v, n, nodeptr_less{});
 			v.insert(pos, n);
 		}
 		node* root = v.back();
 		v.pop_back();
 
-		generate_codes(root);
+		std::cout << "HUFFMAN CODES:\n";
+		generate_codes(root, 0, 0);
+		for (auto& [sym, pair] : codes_map) {
+			auto [code, len] = pair;
+			std::cout << "<<" << sym << ">> -> code: " << code << " len: " << len << "\n";
+		}
+		std::cout << "CANONICAL HUFFMAN CODES:\n";
+		make_canonical();
+		for (auto& [sym, pair] : canonical_codes_map) {
+			auto [code, len] = pair;
+			std::cout << "<<" << sym << ">> -> code: " << code << " len: " << len << "\n";
+		}
 	}
 };
 
-void compress(const string& input_filename, const string& output_filename) {
-	std::ifstream is(input_filename, std::ios::binary);
-	if (!is) {
-		cout << "ERROR: cannot open file for reading";
-	}
-	std::ofstream os(output_filename, std::ios::binary);
-	if (!os) {
-		cout << "ERROR: cannot open file for writing";
-	}
-	vector<uint8_t> v(istreambuf_iterator<char>{is}, istreambuf_iterator<char>() );
+void decompress(std::string input_file, std::string output_file) {
 
-	unordered_map<uint8_t, uint64_t> freq_map = frequencies(v);
-	huffman h(freq_map);
-
-	bitwriter bw(os);
-
-	os << "HUFFMAN1";
-	os.put(static_cast<char>(freq_map.size()));
-	for (const auto& [sym, x] : h.code_map) {
-		auto&& [code, len] = x;
-		bw(sym, 8);
-		bw(len, 5);
-		bw(code, len);
-	}
-	bw(v.size(), 32);
-	for (const auto& x : v) {
-		auto&& [code, len] = h.code_map[x];
-		bw(code, len);
-	}
 }
 
-void decompress(const string& input_filename, const string& output_filename) {
-	std::ifstream is(input_filename, std::ios::binary);
-	if (!is) {
-		cout << "ERROR: cannot open file for reading";
-	}
-	std::ofstream os(output_filename, std::ios::binary);
-	if (!os) {
-		cout << "ERROR: cannot open file for writing";
-	}
+void compress(std::string input_file, std::string output_file) {
+	std::ifstream is(input_file, std::ios::binary);
+	std::vector<uint8_t> v{std::istreambuf_iterator<char>(is), std::istreambuf_iterator<char>()};
 
-	bitreader br(is);
+	auto f = std::ranges::for_each(v, frequency{}).fun;
+	huffman<uint8_t> h(f);
 
-	std::string magic(8, ' ');
-	is.read(magic.data(), 8);
-	if (magic != "HUFFMAN1") {
-		return;
-	}
-	size_t tblsize = is.get(); //next 8bits we will read represent the number of items in Huffman Table
-	if (tblsize == 0) {
-		tblsize = 256;
-	}
-	//building up the Huffman Table using a vector of tuples
-	vector<tuple<uint64_t, uint8_t, uint64_t>> tbl;
-	for (size_t i = 0; i < tblsize; i++) {
-		uint8_t sym = br(8);
-		uint64_t len = br(5);
-		uint64_t code = br(len);
-		tbl.emplace_back(len, sym, code);
-	}
-	size_t numsym = br(32);
-	std::ranges::sort(tbl);
-	//reading the compressed data
-	uint64_t read_len;
-	uint64_t buffer;
-	for (size_t i = 0; i < numsym; i++) {
-		read_len = 0;
-		buffer = 0;
-		for (size_t j = 0; j < tblsize; j++) {
-			auto&& [len, sym, code] = tbl[j];
-			buffer = (buffer << (len - read_len)) | br(len - read_len);
-			read_len = len;
-			if (buffer == code) {
-				os.put(sym);
-				break;
-			}
-		}
-	}
 }
 
 int main(int argc, char* argv[]) {
 	if (argc != 4) {
-		cout << "ERROR: number of parameters insufficient.";
-		exit(EXIT_FAILURE);
+		return EXIT_FAILURE;
 	}
-	string command = argv[1];
+
+	std::string command = argv[1];
 	if (command == "c") {
 		compress(argv[2], argv[3]);
 	}
@@ -237,10 +139,8 @@ int main(int argc, char* argv[]) {
 		decompress(argv[2], argv[3]);
 	}
 	else {
-		cout << "ERROR: first parameter is not 'c' or 'd'";
-		exit(EXIT_FAILURE);
+		return EXIT_FAILURE;
 	}
 
 	return EXIT_SUCCESS;
 }
-

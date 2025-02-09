@@ -59,6 +59,18 @@ bool flags(uint8_t SDflags, uint8_t& CRbits, uint8_t& bpp) {
 	else return false;
 }
 
+void write_pixels(std::ofstream& os, std::map<uint8_t, std::vector<uint8_t>> colormap, std::map<uint16_t, 
+	std::vector<uint16_t>> dict, std::vector<uint16_t> last_seq) 
+{
+	std::vector<uint8_t> rgb;
+	for (uint16_t index : last_seq) {
+		rgb = colormap[index];
+		for (uint8_t byte : rgb) {
+			os.put(byte);
+		}
+	}
+}
+
 void decompress(std::ifstream& is, std::ofstream& os) {
 	char ch;
 	std::string token;
@@ -81,8 +93,6 @@ void decompress(std::ifstream& is, std::ofstream& os) {
 	is.read(reinterpret_cast<char*>(&GCMindex), sizeof(GCMindex));
 
 	is.get(ch);
-	if (ch != 0)
-		return;
 
 	uint8_t CRbits = 0, bpp = 0;
 	std::map<uint8_t, std::vector<uint8_t>> colormap;
@@ -118,7 +128,7 @@ void decompress(std::ifstream& is, std::ofstream& os) {
 	os << "P6\n" << w << " " << h << " " << 255 << "\n";
 
 	//Data Rasters
-	std::map<uint16_t, uint16_t> dict;
+	std::map<uint16_t, std::vector<uint16_t>> dict;
 
 	uint8_t codesize;
 	is.read(reinterpret_cast<char*>(&codesize), sizeof(codesize));
@@ -134,6 +144,7 @@ void decompress(std::ifstream& is, std::ofstream& os) {
 		uint8_t BBcount;
 		is.read(reinterpret_cast<char*>(&BBcount), sizeof(BBcount));
 		size_t bit_i = 0, BBcount_bits = BBcount * 8;
+		std::vector<uint16_t> last_seq;
 
 		while (bit_i <= BBcount_bits) {
 			//add a bit to the the code size
@@ -141,7 +152,6 @@ void decompress(std::ifstream& is, std::ofstream& os) {
 				if(size + 1 <= 12)
 					++size;
 				else {
-					//std::cout << "\nmaxsize at pos: " << is.tellg() << "\n";
 					uint16_t color_index = br(static_cast<int>(size));
 					if (color_index != CLEARcode) {
 						std::cout << "stream ERROR\n";
@@ -150,7 +160,9 @@ void decompress(std::ifstream& is, std::ofstream& os) {
 					else {
 						dict.clear();
 						for (uint16_t i = 0; i < CLEARcode + 2; ++i) {
-							dict.emplace(i, i);
+							std::vector<uint16_t> v;
+							v.push_back(i);
+							dict.emplace(i, v);
 						}
 						dict_index = CLEARcode + 2;
 						bit_i += size;
@@ -158,34 +170,44 @@ void decompress(std::ifstream& is, std::ofstream& os) {
 					}
 				}
 			}
-			//end of the raster?
 			if (bit_i == BBcount_bits) {
-				//std::cout << is.tellg() << " - ";
 				break;
 			}
 			//read the code
 			uint16_t color_index = br(static_cast<int>(size));
+			last_seq.push_back(color_index);
+			bit_i += size;
 			//check if it's CLEAR code or EOI
 			if (color_index == EOI) {
 				//break;
-				//std::cout << " <<EOI>> ";
-				bit_i += size;
 				continue;
 			}
 			if (color_index == CLEARcode) {
-				//std::cout << " <<CLEAR>> ";
 				dict.clear();
 				for (uint16_t i = 0; i < CLEARcode + 2; ++i) {
-					dict.emplace(i, i);
+					std::vector<uint16_t> v;
+					v.push_back(i);
+					dict.emplace(i, v);
 				}
 				dict_index = CLEARcode + 2;
 			}
 			else {
-				dict.emplace(dict_index, color_index);
+				if (color_index < 256) {
+					last_seq.push_back(color_index);
+					dict.emplace(dict_index, last_seq);
+				}
+				else {
+					std::vector<uint16_t> v = dict[color_index];
+					for (uint16_t x : v) {
+						last_seq.push_back(x);
+					}
+					dict.emplace(dict_index, last_seq);
+				}
+				write_pixels(os, colormap, dict, last_seq);
+				last_seq.clear();
+				last_seq.push_back(color_index);
 				++dict_index;
 			}
-
-			bit_i += size;
 
 			auto curpos = is.tellg();
 			is.read(reinterpret_cast<char*>(&raster_end), sizeof(raster_end));
@@ -194,15 +216,6 @@ void decompress(std::ifstream& is, std::ofstream& os) {
 				break;
 			}
 		}
-		//write the right pixel in output
-		for (int i = 258; i < dict.size(); ++i) {
-			uint16_t ct_index = dict[i];
-			std::vector<uint8_t> rgb = colormap[static_cast<uint8_t>(ct_index)];
-			for (uint8_t byte : rgb) {
-				os << byte;
-			}
-		}
-
 	}
 	std::cout << is.tellg();
 }

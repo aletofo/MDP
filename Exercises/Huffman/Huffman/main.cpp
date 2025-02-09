@@ -180,6 +180,7 @@ struct huffman {
 		v.pop_back();
 
 		generate_codes(root);
+		make_canonical();
 	}
 };
 
