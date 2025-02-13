@@ -10,6 +10,27 @@ struct PAMimg {
 	size_t width_, height_, depth_;
 	std::vector<uint8_t> data_;
 
+	std::vector<uint8_t> blend_pixel(std::vector<uint8_t> pix_o, std::vector<uint8_t> pix_u) {
+		double alpha_o = pix_o[3] / 255, alpha_u = pix_u[3] / 255;
+		double alpha0 = alpha_o + alpha_u * (1 - alpha_o);
+		double C0;
+		std::vector<double> rgba_d;
+		std::vector<uint8_t> rgba;
+
+		for (int i = 0; i < 3; ++i) {
+			C0 = (pix_o[i] * alpha_o + pix_u[i] * alpha_u * (1 - alpha_o)) / alpha0;
+			rgba_d.push_back(C0);
+		}
+		for (int i = 0; i < 3; ++i) {
+			uint8_t byte = static_cast<uint8_t>(rgba_d[i]);
+			rgba.push_back(byte);
+		}
+		rgba.push_back(static_cast<uint8_t>(alpha0 * 255));
+		return rgba;
+	}
+
+public:
+
 	PAMimg(size_t w, size_t h, size_t d) : width_(w), height_(h), depth_(d), data_(w * h * d) {}
 
 	uint8_t at (size_t c, size_t r) {
@@ -48,13 +69,39 @@ struct PAMimg {
 		}
 		
 		int i = 0;
-		std::vector<uint8_t> rgba;
+		uint8_t byte_o = 0;
+		std::vector<uint8_t> rgba_over, rgba_under;
 		for (size_t r = y; r < height_; ++r) {
+			if (r >= over_img.height() + y) {
+				break;
+			}
 			for (size_t c = x * depth_; c < width_ * depth_; ++c) {
-				uint8_t byte = over_data[i];
-				data_[r * (width_ * depth_) + c] = byte;
-
-				++i;
+				if (c >= over_img.width() * depth_ + x * depth_) {
+					break;
+				}
+				for (int channel = 0; channel < 4; ++channel) {
+					if (i < over_data.size()) {
+						byte_o = over_data[i];
+						++i;
+					}
+					else {
+						byte_o = 0;
+					}
+					uint8_t byte_u = data_[r * (width_ * depth_) + c];
+					++c;
+					rgba_over.push_back(byte_o);
+					rgba_under.push_back(byte_u);
+				}
+				rgba_over = blend_pixel(rgba_over, rgba_under);
+				c -= 4;
+				for (int channel = 0; channel < 4; ++channel) {
+					uint8_t byte = rgba_over[channel];
+					data_[r * (width_ * depth_) + c] = byte;
+					++c;
+				}
+				rgba_over.clear();
+				rgba_under.clear();
+				--c;
 				if (i >= over_data.size()) {
 					break;
 				}
@@ -154,7 +201,12 @@ int main(int argc, char* argv[]) {
 			final_h = img.height();
 		}
 		else {
-
+			input_filename = argv[i] + ext;
+			std::ifstream is(input_filename, std::ios::binary);
+			img = p_compose(is, 0, 0, img);
+			final_data = img.get_data();
+			final_w = img.width();
+			final_h = img.height();
 		}
 	}
 
