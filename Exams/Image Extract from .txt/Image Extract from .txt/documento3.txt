@@ -1,0 +1,35 @@
+document obj
+	group	obj
+		hidden	"true"
+		image	obj
+			data	obj
+				width	"3"
+				height	"2"
+				pixel	"AAAAAAAAAAAA////////////"
+			data	end
+		image	end
+	group	end
+	
+	group	obj
+		image	obj
+			hidden	"true"
+			data	obj
+				width	"3"
+				height	"2"
+				pixel	"AAAAAAAAAAAA////////////"
+			data	end
+		image	end
+	group	end	
+
+	group	obj
+		group	obj
+			image	obj
+				data	obj
+					width	"3"
+					height	"2"
+					pixel	"AAAAAAAAAAAA////////////"
+				data	end
+			image	end
+		group	end	
+	group	end		
+document end

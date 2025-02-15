@@ -1,0 +1,18 @@
+document obj 
+	title " prova con spazi senza group ma con document-end e image obj " 
+	
+	section obj 
+		hidden "true" 
+	section end
+	
+	section obj
+		image obj 
+			height "25 mm" 
+			data obj 
+				height "2" 
+				pixel "odLx8cfUJvJI8mAm" 
+				width "2" 
+			data end 
+		image end 
+	section end 
+document end

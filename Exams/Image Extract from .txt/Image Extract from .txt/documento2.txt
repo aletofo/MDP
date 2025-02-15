@@ -1,0 +1,9 @@
+document obj
+	image	obj
+		data	obj
+			width	"3"
+			height	"2"
+			pixel	"AAAAAAAAAAAA////////////"
+		data	end
+	image	end
+document end
