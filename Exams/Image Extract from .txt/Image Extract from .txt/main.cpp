@@ -106,8 +106,11 @@ PPM build_image(std::ifstream& is) {
 
 	is >> token; //==obj
 
+	int info_counter = 0;
+
 	while (is >> token) {
 		if (token == "width") {
+			++info_counter;
 			while (is.get(ch)) {
 				if (ch == '"') {
 					is >> token;
@@ -118,6 +121,7 @@ PPM build_image(std::ifstream& is) {
 			}
 		}
 		if (token == "height") {
+			++info_counter;
 			while (is.get(ch)) {
 				if (ch == '"') {
 					is >> token;
@@ -128,6 +132,7 @@ PPM build_image(std::ifstream& is) {
 			}
 		}
 		if (token == "pixel") {
+			++info_counter;
 			while (is.get(ch)) {
 				if (ch == '"') {
 					std::string pix;
@@ -145,6 +150,8 @@ PPM build_image(std::ifstream& is) {
 					break;
 				}
 			}
+		}
+		if (info_counter == 3) {
 			break;
 		}
 	}
@@ -160,7 +167,12 @@ std::vector<PPM> find_images(std::ifstream& is) {
 	std::vector<PPM> images;
 
 	while (is >> cur_token) {
-		
+		if (cur_token == "\"") {
+			char ch = 0;
+			while (ch != '"') {
+				is.get(ch);
+			}
+		}
 		if (cur_token == "obj") {
 			curobj = last_token;
 		}
