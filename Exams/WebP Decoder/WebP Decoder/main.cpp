@@ -2,6 +2,7 @@
 #include <string>
 #include <unordered_map>
 #include <ranges>
+#include <iterator>
 #include <algorithm>
 #include <cstdint>
 #include <fstream>
@@ -64,7 +65,14 @@ struct PAM {
 
 
 };
-/*
+
+struct frequency {
+	std::unordered_map<uint64_t, uint64_t> freq_;
+	void operator() (uint64_t len) {
+		freq_[len]++;
+	}
+};
+
 struct huffman {
 	struct node {
 		uint64_t sym_;
@@ -74,35 +82,79 @@ struct huffman {
 	};
 	struct nodeptr_less {
 		bool operator() (node* a, node* b) {
-			return a->freq_ < b->freq_;
+			return a->freq_ > b->freq_;
 		}
 	};
 
-	void generate_codes(node* n, uint64_t code, uint64_t len) {
+	std::vector<std::unique_ptr<node>> nodes_;
 
+	template<typename... Ts>
+	node* make_node(Ts... args) {
+		nodes_.emplace_back(std::make_unique<node>(std::forward<Ts>(args)...));
+		return nodes_.back().get();
 	}
 
-	std::unordered_map<std::pair<uint64_t, int>, uint64_t> canonical_codes_;
-	void make_canonical(std::vector<std::pair<uint64_t, int>> map) {
-		uint64_t cur_len = 0;
-		uint64_t cur_code = 0;
-		std::pair<uint64_t, int> tmp;
-		for (std::pair<uint64_t, int> p : map) {
-			auto& [len, pos] = p;
-			uint64_t addbits = len - cur_len;
-			cur_code <<= addbits;
-			cur_len = len;
-			tmp = std::make_pair(cur_len, pos);
-			canonical_codes_.emplace(tmp, cur_code);
-			cur_code++;
+	std::unordered_map<uint64_t, std::pair<uint64_t, uint64_t>> code_map; // sym -> {code, len}
+	std::vector<std::tuple<uint64_t, uint64_t, uint64_t>> canonical; // {len, sym, code}
+
+	void generate_codes(const node* n, uint64_t code = 0, uint64_t len = 0) {
+		if (n->left_ == 0) {
+			code_map[n->sym_] = { code, len };
+		}
+		else {
+			generate_codes(n->left_, (code << 1) | 0, len + 1);
+			generate_codes(n->right_, (code << 1) | 1, len + 1);
+		}
+	}
+
+	void make_canonical() {
+		canonical.clear();
+		for (const auto& [sym, x] : code_map) {
+			auto&& [code, len] = x;
+			canonical.emplace_back(len, sym, code);
+		}
+		std::ranges::sort(canonical);
+		uint64_t curcode = 0, curlen = 0;
+		for (auto& [len, sym, code] : canonical) {
+			uint64_t addbits = len - curlen;
+			curcode <<= addbits;
+			code_map[sym].first = curcode;
+			code = curcode;
+			curlen = len;
+			++curcode;
 		}
 	}
 
 	huffman() {}
 
+	huffman(frequency f) {
+		std::vector<node*> v;
+		for (auto& [len, f] : f.freq_) {
+			node* n = make_node(len, f);
+			v.emplace_back(n);
+		}
+		std::ranges::sort(v, nodeptr_less{});
+
+		while (v.size() > 1) {
+			node* n1 = v.back();
+			v.pop_back();
+			node* n2 = v.back();
+			v.pop_back();
+
+			node* n = make_node(0, n1->freq_ + n2->freq_, n1, n2);
+			auto pos = std::ranges::lower_bound(v, n, nodeptr_less{});
+			v.insert(pos, n);
+		}
+		node* root = v.back();
+		v.pop_back();
+
+		generate_codes(root, 0, 0);
+		make_canonical();
+	}
+
 	
 };
-*/
+
 bool webPhdr(std::ifstream& is) {
 	std::string token;
 	char ch;
@@ -144,13 +196,13 @@ bool webPhdr(std::ifstream& is) {
 	return true;
 }
 
-std::unordered_map<uint64_t, std::pair<uint64_t, int>> make_canonical(std::vector<std::pair<uint64_t, int>> map) {
-	std::unordered_map<uint64_t, std::pair<uint64_t, int>> canonical_codes;
+std::unordered_map<uint64_t, std::pair<uint64_t, uint64_t>> make_canonical(std::vector<std::pair<uint64_t, uint64_t>> map) {
+	std::unordered_map<uint64_t, std::pair<uint64_t, uint64_t>> canonical_codes;
 	uint64_t cur_len = 0;
 	uint64_t cur_code = 0;
 
-	std::pair<uint64_t, int> tmp;
-	for (std::pair<uint64_t, int> p : map) {
+	std::pair<uint64_t, uint64_t> tmp;
+	for (std::pair<uint64_t, uint64_t> p : map) {
 		auto& [len, pos] = p;
 		uint64_t addbits = len - cur_len;
 		cur_code <<= addbits;
@@ -162,8 +214,8 @@ std::unordered_map<uint64_t, std::pair<uint64_t, int>> make_canonical(std::vecto
 	return canonical_codes;
 }
 
-uint64_t find_lenghtcode(std::ifstream& is, bitreader& br, std::unordered_map<uint64_t, std::pair<uint64_t, int>> codes) {
-	int len = static_cast<int>(std::get<0>(codes[0]));
+uint64_t find_lenghtcode(std::ifstream& is, bitreader& br, std::unordered_map<uint64_t, std::pair<uint64_t, uint64_t>> codes) {
+	uint64_t len = std::get<0>(codes[0]);
 	auto startpos = is.tellg();
 	int start_n = br.n_;
 	uint64_t code = br.read_code(len);
@@ -190,8 +242,8 @@ void normal_code(bitreader& br, std::ifstream& is, int prefixcode) {
 	std::vector<uint64_t> code_length_code_lengths;
 	code_length_code_lengths.resize(19);
 	std::fill(code_length_code_lengths.begin(), code_length_code_lengths.end(), 0); //all zeros
-	std::vector<std::pair<uint64_t, int>> code_lengths_map;
-	std::pair<uint64_t, int> p;
+	std::vector<std::pair<uint64_t, uint64_t>> code_lengths_map;
+	std::pair<uint64_t, uint64_t> p;
 
 	for (size_t i = 0; i < num_code_lengths; ++i) {
 		code_length_code_lengths[kCodeLengthOrder[i]] = br(3);
@@ -212,7 +264,7 @@ void normal_code(bitreader& br, std::ifstream& is, int prefixcode) {
 		else
 			max_symbol = 256;
 
-		std::unordered_map<uint64_t, std::pair<uint64_t, int>> code_lengths_huf = make_canonical(code_lengths_map);
+		std::unordered_map<uint64_t, std::pair<uint64_t, uint64_t>> code_lengths_huf = make_canonical(code_lengths_map);
 
 		std::vector<int> lengths;
 		int last_len = 0;
@@ -251,12 +303,15 @@ void normal_code(bitreader& br, std::ifstream& is, int prefixcode) {
 				}
 			}
 		}
+
+		frequency f = std::ranges::for_each(lengths, frequency{}).fun;
+		huffman h(f);
 	}
 	else {
 		uint64_t length_nbits = 2 + 2 * br(3);
 		uint64_t max_symbol = 2 + br(static_cast<int>(length_nbits));
 
-		std::unordered_map<uint64_t, std::pair<uint64_t, int>> code_lengths_huf = make_canonical(code_lengths_map);
+		std::unordered_map<uint64_t, std::pair<uint64_t, uint64_t>> code_lengths_huf = make_canonical(code_lengths_map);
 	}
 	
 	
