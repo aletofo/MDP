@@ -204,6 +204,9 @@ std::unordered_map<uint64_t, std::pair<uint64_t, uint64_t>> make_canonical(std::
 	std::pair<uint64_t, uint64_t> tmp;
 	for (std::pair<uint64_t, uint64_t> p : map) {
 		auto& [len, pos] = p;
+		if (len == 0) {
+			continue;
+		}
 		uint64_t addbits = len - cur_len;
 		cur_code <<= addbits;
 		cur_len = len;
@@ -234,7 +237,7 @@ uint64_t find_lenghtcode(std::ifstream& is, bitreader& br, std::unordered_map<ui
 	return code;
 }
 
-void normal_code(bitreader& br, std::ifstream& is, int prefixcode) {
+void normal_code(bitreader& br, std::ifstream& is, int prefixcode, std::vector<std::unordered_map<uint64_t, std::pair<uint64_t, uint64_t>>>& RGBA_hufmaps) {
 	uint64_t num_code_lengths = br(4) + 4;
 
 	int kCodeLengthCodes = 19;
@@ -266,12 +269,12 @@ void normal_code(bitreader& br, std::ifstream& is, int prefixcode) {
 
 		std::unordered_map<uint64_t, std::pair<uint64_t, uint64_t>> code_lengths_huf = make_canonical(code_lengths_map);
 
-		std::vector<int> lengths;
-		int last_len = 0;
+		std::vector<uint64_t> lengths;
+		uint64_t last_len = 0;
 		int counter = 0;
 		for (uint64_t i = 0; i < max_symbol;) {
 			uint64_t code = find_lenghtcode(is, br, code_lengths_huf);
-			int len = std::get<1>(code_lengths_huf[code]);
+			uint64_t len = std::get<1>(code_lengths_huf[code]);
 			if (len <= 15) {
 				lengths.push_back(len);
 				last_len = len;
@@ -303,9 +306,20 @@ void normal_code(bitreader& br, std::ifstream& is, int prefixcode) {
 				}
 			}
 		}
+		std::vector<std::pair<uint64_t, uint64_t>> codelengths;
+		std::pair<uint64_t, uint64_t> p;
+		uint64_t pos = 0;
+		for (uint64_t len : lengths) {
+			p = std::make_pair(len, pos);
+			codelengths.push_back(p);
+			++pos;
+		}
+		std::ranges::sort(codelengths);
+		std::unordered_map<uint64_t, std::pair<uint64_t, uint64_t>> lengths_huf = make_canonical(codelengths);
+		
+		std::cout << "\n" << is.tellg() << " - posbit: " << br.n_ << "\n";
 
-		frequency f = std::ranges::for_each(lengths, frequency{}).fun;
-		huffman h(f);
+		RGBA_hufmaps.push_back(lengths_huf);
 	}
 	else {
 		uint64_t length_nbits = 2 + 2 * br(3);
@@ -317,11 +331,30 @@ void normal_code(bitreader& br, std::ifstream& is, int prefixcode) {
 	
 }
 
-void simple_code(bitreader& br, std::ifstream& is) {
+void simple_code(bitreader& br, std::ifstream& is, std::vector<std::unordered_map<uint64_t, std::pair<uint64_t, uint64_t>>>& RGBA_hufmaps) {
 	uint64_t num_symbols = br(1) + 1;
 	uint64_t is_first_8bits = br(1);
 
 	uint64_t symbol0 = br(1 + 7 * is_first_8bits);
+
+	std::vector<std::pair<uint64_t, uint64_t>> code_lengths;
+	std::pair<uint64_t, uint64_t> p = std::make_pair(symbol0, 1);
+	code_lengths.push_back(p);
+
+	std::unordered_map<uint64_t, std::pair<uint64_t, uint64_t>> alpha;
+
+	if (num_symbols == 2) {
+		uint64_t symbol1 = br(8);
+		std::pair<uint64_t, uint64_t> p = std::make_pair(symbol1, 1);
+		code_lengths.push_back(p);
+		alpha.emplace(0, code_lengths[0]);
+		alpha.emplace(1, code_lengths[1]);
+		RGBA_hufmaps.push_back(alpha);
+	}
+	else {
+		alpha.emplace(0, code_lengths[0]);
+		RGBA_hufmaps.push_back(alpha);
+	}
 }
 
 void decompress(std::ifstream& is, std::ofstream& os) {
@@ -340,12 +373,17 @@ void decompress(std::ifstream& is, std::ofstream& os) {
 	if (check_bits != 0) {
 		return;
 	}
-	uint64_t encoding = br(1);
-	if (encoding == 0) { //normal code length code
-		normal_code(br, is, 1);
-	}
-	else { //simple code length code
-		simple_code(br, is);
+
+	std::vector<std::unordered_map<uint64_t, std::pair<uint64_t, uint64_t>>> RGBA_hufmaps;
+
+	for (int i = 1; i <= 5; ++i) { //5 prefix codes
+		uint64_t encoding = br(1);
+		if (encoding == 0) { //normal code length code
+			normal_code(br, is, i, RGBA_hufmaps);
+		}
+		else { //simple code length code
+			simple_code(br, is, RGBA_hufmaps);
+		}
 	}
 
 
